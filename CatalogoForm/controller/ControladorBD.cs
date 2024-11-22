@@ -60,28 +60,28 @@ namespace Catalogo.controller
                 {
 
 //Ordenado por TIPO:
-                    case 1:
+                    case 3:
                         List<Periferico> ordenada_tipo = lista_bd;
                         ordenada_tipo.Sort(new OrdenarPorTipo());
                         return ordenada_tipo;
                         break;
 
 //Ordenado por IDPRODUCTO:
-                    case 2:
+                    case 4:
                         List<Periferico> ordenada_id = lista_bd;
                         ordenada_id.Sort(new OrdenarPorID());
                         return ordenada_id;
                         break;
 
 //Ordenado por MARCA:
-                    case 3:
+                    case 5:
                         List<Periferico> ordenada_marca = lista_bd;
                         ordenada_marca.Sort(new OrdenarPorMarca());
                         return ordenada_marca;
                         break;
 
  //Ordenado por PRECIO:
-                    case 4:
+                    case 6:
                         List<Periferico> ordenada_precio = lista_bd;
                         ordenada_precio.Sort(new OrdenarPorPrecio());
                         return ordenada_precio;

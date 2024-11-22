@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Catalogo.controller;
+using Catalogo.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,14 +14,48 @@ namespace CatalogoForm
 {
     public partial class MenuVer : Form
     {
-        public MenuVer()
+        List<Periferico> aux;
+        ControladorBD cbd;
+        int cont = 0;
+        public MenuVer(int opcion)
         {
+            cbd = ControladorBD.getControlador();
+            if (cbd == null)
+            {
+                throw new Exception();
+            }
             InitializeComponent();
+            EleccionMenu(opcion);
+            MostrarMenu(aux);
         }
-        private void MenuVer_Load(object sender, EventArgs e)
-        {
 
+        private void EleccionMenu(int opcion)
+        {
+            switch (opcion)
+            {
+                case 1:
+                    aux = cbd.VerBD();
+                    break;
+                case 2:
+                    aux = cbd.OrdenarPorDefecto();
+                    break;
+                case 3:
+                case 4:
+                case 5:
+                case 6:
+                    aux = cbd.OrdenarPorColumna(opcion);
+                    break;
+                default:
+                    aux = cbd.FiltrarProductoPrecio(opcion,null,null,null,null);
+                    break;
+            }
         }
+        private void MostrarMenu(List<Periferico>? aux)
+        {
+            
+        }
+
+
 
         private void btnModificar_Click(object sender, EventArgs e)
         {
@@ -60,5 +96,7 @@ namespace CatalogoForm
             txtAtributo9.Enabled = false;
             txtAtributo10.Enabled = false;
         }
+
+        
     }
 }
