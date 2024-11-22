@@ -60,6 +60,7 @@
             pbxImagen = new PictureBox();
             lblTipo = new Label();
             txtTipo = new TextBox();
+            label1 = new Label();
             pnlProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbxImagen).BeginInit();
             SuspendLayout();
@@ -134,7 +135,7 @@
             btnModificar.TabIndex = 5;
             btnModificar.Text = "Modificar";
             btnModificar.UseVisualStyleBackColor = true;
-            btnModificar.Click += button4_Click;
+            btnModificar.Click += btnModificar_Click;
             // 
             // btnBorrar
             // 
@@ -173,6 +174,7 @@
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = true;
             btnCancelar.Visible = false;
+            btnCancelar.Click += btnCancelar_Click;
             // 
             // pnlProducto
             // 
@@ -416,6 +418,16 @@
             txtTipo.Size = new Size(202, 39);
             txtTipo.TabIndex = 18;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Font = new Font("Segoe UI", 16F);
+            label1.Location = new Point(68, 9);
+            label1.Name = "label1";
+            label1.Size = new Size(218, 37);
+            label1.TabIndex = 19;
+            label1.Text = "Lista Sin Ordenar";
+            // 
             // MenuVer
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
@@ -423,6 +435,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(792, 526);
+            Controls.Add(label1);
             Controls.Add(txtTipo);
             Controls.Add(lblTipo);
             Controls.Add(pnlProducto);
@@ -479,5 +492,6 @@
         private TextBox txtMarca;
         private TextBox txtPrecio;
         private TextBox txtTipo;
+        private Label label1;
     }
 }

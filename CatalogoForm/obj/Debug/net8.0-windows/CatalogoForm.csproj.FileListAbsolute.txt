@@ -17,3 +17,4 @@ C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debu
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.MenuPrincipal.resources
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.Properties.Resources.resources
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.MenuVer.resources
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.sourcelink.json

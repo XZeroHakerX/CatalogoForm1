@@ -32,7 +32,8 @@ namespace CatalogoForm
 
         private void btnSinOrdenar_Click(object sender, EventArgs e)
         {
-
+            MenuVer menuVer = new MenuVer();
+            menuVer.ShowDialog();
         }
 
         private void btnOrdenarDefecto_Click(object sender, EventArgs e)
