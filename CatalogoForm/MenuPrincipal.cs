@@ -109,5 +109,10 @@ namespace CatalogoForm
             AgregarArticulo menuAgregar = new AgregarArticulo(3);
             menuAgregar.ShowDialog();
         }
+
+        private void bntBorrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

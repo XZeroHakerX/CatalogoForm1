@@ -14,10 +14,16 @@ namespace CatalogoForm
 {
     public partial class MenuVer : Form
     {
+
+
+        //Atributos:
         List<Periferico> aux;
         ControladorBD cbd;
         int cont = 0;
 
+        
+        
+        //Constructor:
         public MenuVer(int opcion, int? tipo, int? idProducto, string? marca, double? precio)
         {
             cbd = ControladorBD.getControlador();
@@ -25,9 +31,12 @@ namespace CatalogoForm
             InitializeComponent();
             EleccionMenu(opcion, tipo, idProducto, marca, precio);
             MostrarMenu();
+
         }
 
-    //Metodo para traer la lista correcta:
+        
+        
+        //Metodo para traer la lista correcta:
         private void EleccionMenu(int opcion, int? tipo, int? idProducto, string? marca, double? precio)
         {
             switch (opcion)
@@ -80,22 +89,46 @@ namespace CatalogoForm
             }
         }
 
-    //Metodo para actualizar vista menu:
+        
+        
+        //Metodo para actualizar vista menu:
         private void MostrarMenu()
         {
             if (aux == null || aux.Count == 0)
             {
-                throw new ArgumentException();
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                LimpiaCampos();
+            }
+            else
+            {
+                AtributosSegunProductos();
+                MostrarArticulo();
             }
 
             ActivarDesactivarNavegacion();
-            AtributosSegunProductos();
-            MostrarArticulo();
-
 
         }
 
-    //Metodo para mostrar el articulo actual:
+       
+        
+        //Limpia los campos a "":
+        private void LimpiaCampos()
+        {
+            txtTipo.Text = "";
+            txtId.Text = "";
+            txtMarca.Text = "";
+            txtPrecio.Text = "";
+            txtAtributo5.Text = "";
+            txtAtributo6.Text = "";
+            txtAtributo7.Text = "";
+            txtAtributo8.Text = "";
+            txtAtributo9.Text = "";
+            txtAtributo10.Text = "";
+        }
+
+        
+       
+        //Metodo para mostrar el articulo actual:
         private void MostrarArticulo()
         {
             txtTipo.Text = ((TipoPeriferico)aux[cont].Tipo).ToString();
@@ -145,7 +178,9 @@ namespace CatalogoForm
             }
         }
 
-    //Metodo para cambiar  
+        
+        
+        //Metodo para cambiar:
         private void AtributosSegunProductos()
         {
             if (aux[cont].Tipo == 0)
@@ -192,14 +227,22 @@ namespace CatalogoForm
 
         }
 
-    //Metodo para comprobacion de Botones NAVEGACION:
+        
+        
+        //Metodo para comprobacion de Botones NAVEGACION:
         private void ActivarDesactivarNavegacion()
         {
             //Marcador de Producto
-            lblMarcador.Text = $"{cont + 1} / {aux.Count}";
-
+            if (aux.Count == 0)
+            {
+                lblMarcador.Text = "0 / 0";
+            }
+            else
+            {
+                lblMarcador.Text = $"{cont + 1} / {aux.Count}";
+            }
             //Comprobaciones para activar o no los botones Primero o Anterior
-            if (cont == 0)
+            if (cont == 0 || aux.Count == 0)
             {
                 btnAnterior.Enabled = false;
                 btnPrimero.Enabled = false;
@@ -211,7 +254,7 @@ namespace CatalogoForm
             }
 
             //Comprobaciones para activar o no los botones Siguiente o Ultimo
-            if (cont == aux.Count - 1)
+            if (cont == aux.Count - 1 || aux.Count == 0)
             {
                 btnSiguiente.Enabled = false;
                 btnUltimo.Enabled = false;
@@ -223,44 +266,57 @@ namespace CatalogoForm
             }
         }
 
-    //Metodo para el boton MODIFICAR:
+        
+        
+        //Metodo para el boton MODIFICAR:
         private void btnModificar_Click(object sender, EventArgs e)
         {
-            btnGuardar.Visible = true;
-            btnCancelar.Visible = true;
-            btnAnterior.Enabled = false;
-            btnPrimero.Enabled = false;
-            btnSiguiente.Enabled = false;
-            btnUltimo.Enabled = false;
-            txtId.ReadOnly = false;
-            txtMarca.ReadOnly = false;
-            txtPrecio.ReadOnly = false;
-            txtAtributo5.ReadOnly = false;
-            txtAtributo6.ReadOnly = false;
-            txtAtributo7.ReadOnly = false;
-            txtAtributo8.ReadOnly = false;
-            txtAtributo9.ReadOnly = false;
-            txtAtributo10.ReadOnly = false;
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                btnGuardar.Visible = true;
+                btnCancelar.Visible = true;
+                btnAnterior.Enabled = false;
+                btnPrimero.Enabled = false;
+                btnSiguiente.Enabled = false;
+                btnUltimo.Enabled = false;
+                txtId.ReadOnly = false;
+                txtMarca.ReadOnly = false;
+                txtPrecio.ReadOnly = false;
+                txtAtributo5.ReadOnly = false;
+                txtAtributo6.ReadOnly = false;
+                txtAtributo7.ReadOnly = false;
+                txtAtributo8.ReadOnly = false;
+                txtAtributo9.ReadOnly = false;
+                txtAtributo10.ReadOnly = false;
 
-            txtId.BackColor = SystemColors.Window;
-            txtMarca.BackColor = SystemColors.Window;
-            txtPrecio.BackColor = SystemColors.Window;
-            txtAtributo5.BackColor = SystemColors.Window;
-            txtAtributo6.BackColor = SystemColors.Window;
-            txtAtributo7.BackColor = SystemColors.Window;
-            txtAtributo8.BackColor = SystemColors.Window;
-            txtAtributo9.BackColor = SystemColors.Window;
-            txtAtributo10.BackColor = SystemColors.Window;
+                txtId.BackColor = SystemColors.Window;
+                txtMarca.BackColor = SystemColors.Window;
+                txtPrecio.BackColor = SystemColors.Window;
+                txtAtributo5.BackColor = SystemColors.Window;
+                txtAtributo6.BackColor = SystemColors.Window;
+                txtAtributo7.BackColor = SystemColors.Window;
+                txtAtributo8.BackColor = SystemColors.Window;
+                txtAtributo9.BackColor = SystemColors.Window;
+                txtAtributo10.BackColor = SystemColors.Window;
+            }
 
         }
 
-    //Metodo para guardar os cambios:
+        
+       
+        //Metodo para guardar os cambios:
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
         }
 
-    //Metodo para el boton CANCELAR:
+       
+       
+        //Metodo para el boton CANCELAR:
         private void btnCancelar_Click(object sender, EventArgs e)
         {
             btnGuardar.Visible = false;
@@ -289,32 +345,90 @@ namespace CatalogoForm
         }
 
 
-    //Metodos para botones de NAVEGACION:
+       
+        //Metodos para botones de NAVEGACION:
         private void btnPrimero_Click(object sender, EventArgs e)
         {
-            cont = 0;
-            MostrarMenu();
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+
+                cont = 0;
+                MostrarMenu();
+            }
         }
 
         private void btnAnterior_Click(object sender, EventArgs e)
         {
-            cont--;
-            MostrarMenu();
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                cont--;
+                MostrarMenu();
+            }
         }
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-
-            cont++;
-            MostrarMenu();
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                cont++;
+                MostrarMenu();
+            }
         }
 
         private void btnUltimo_Click(object sender, EventArgs e)
         {
-            cont = aux.Count - 1;
-            MostrarMenu();
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                cont = aux.Count - 1;
+                MostrarMenu();
+            }
         }
 
+       
         
+        //Metodo para borrar articulo:
+        private void btnBorrar_Click(object sender, EventArgs e)
+        {
+            
+
+            if (aux == null || aux.Count == 0)
+            {
+                MessageBox.Show("LISTA VACIA.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult result = MessageBox.Show("¿Seguro que quieres borrar este articulo?", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
+                if(result == DialogResult.Yes)
+                {
+                    cbd.BorrarElemento(aux[cont]);
+                    
+                    if (cont > (aux.Count - 1))
+                    {
+                        cont = (aux.Count - 1);
+                    }
+
+                    MostrarMenu();
+                }
+
+            }
+        }
+    
+    
     }
 }

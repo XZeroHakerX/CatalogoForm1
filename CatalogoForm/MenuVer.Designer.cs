@@ -159,6 +159,7 @@
             btnBorrar.TabIndex = 6;
             btnBorrar.Text = "BORRAR";
             btnBorrar.UseVisualStyleBackColor = true;
+            btnBorrar.Click += btnBorrar_Click;
             // 
             // btnGuardar
             // 
