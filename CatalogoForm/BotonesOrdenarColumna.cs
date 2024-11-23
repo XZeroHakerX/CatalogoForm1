@@ -20,7 +20,7 @@ namespace CatalogoForm
 
         private void btnOrdenarTipo_Click(object sender, EventArgs e)
         {
-            MenuVer menuVer = new MenuVer(3);
+            MenuVer menuVer = new MenuVer(3, null, null, null, null);
             this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
@@ -30,7 +30,7 @@ namespace CatalogoForm
         private void btnOrdenarIdproducto_Click(object sender, EventArgs e)
         {
 
-            MenuVer menuVer = new MenuVer(4);
+            MenuVer menuVer = new MenuVer(4, null, null, null, null);
             this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
@@ -39,7 +39,7 @@ namespace CatalogoForm
         private void btnOrdenarMarca_Click(object sender, EventArgs e)
         {
 
-            MenuVer menuVer = new MenuVer(5);
+            MenuVer menuVer = new MenuVer(5, null, null, null, null);
             this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
@@ -48,7 +48,7 @@ namespace CatalogoForm
         private void btnOrdenarPrecio_Click(object sender, EventArgs e)
         {
 
-            MenuVer menuVer = new MenuVer(6);
+            MenuVer menuVer = new MenuVer(6, null, null, null, null);
             this.Visible = false;
             menuVer.ShowDialog();
             this.Close();

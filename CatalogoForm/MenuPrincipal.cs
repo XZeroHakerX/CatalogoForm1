@@ -58,13 +58,13 @@ namespace CatalogoForm
 
         private void btnSinOrdenar_Click(object sender, EventArgs e)
         {
-            MenuVer menuVer = new MenuVer(1);
+            MenuVer menuVer = new MenuVer(1, null, null, null, null);
             menuVer.ShowDialog();
         }
 
         private void btnOrdenarDefecto_Click(object sender, EventArgs e)
         {
-            MenuVer menuVer = new MenuVer(2);
+            MenuVer menuVer = new MenuVer(2, null, null, null, null);
             menuVer.ShowDialog();
         }
 
@@ -77,9 +77,37 @@ namespace CatalogoForm
 
         private void btnFiltrar_Click(object sender, EventArgs e)
         {
-
+            BotonesFiltrarProducto menuFiltrar = new BotonesFiltrarProducto();
+            menuFiltrar.ShowDialog();
         }
 
-        
+        private void btnSalir_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void btnAgregarRaton_Click(object sender, EventArgs e)
+        {
+            AgregarArticulo menuAgregar = new AgregarArticulo(0);
+            menuAgregar.ShowDialog();
+        }
+
+        private void btnAgregarTeclado_Click(object sender, EventArgs e)
+        {
+            AgregarArticulo menuAgregar = new AgregarArticulo(1);
+            menuAgregar.ShowDialog();
+        }
+
+        private void btnAgregarPantalla_Click(object sender, EventArgs e)
+        {
+            AgregarArticulo menuAgregar = new AgregarArticulo(2);
+            menuAgregar.ShowDialog();
+        }
+
+        private void btnAgregarAltavoz_Click(object sender, EventArgs e)
+        {
+            AgregarArticulo menuAgregar = new AgregarArticulo(3);
+            menuAgregar.ShowDialog();
+        }
     }
 }

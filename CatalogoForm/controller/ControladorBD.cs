@@ -107,36 +107,32 @@ namespace Catalogo.controller
 
             switch (cont3)
             {
-                case 1:
+                case 0:
                     
-                    cont3--;
                     lista_bd.Add(new Raton((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Raton con ID {id}");
 
                     break;
                 
-                case 2:
+                case 1:
                     
-                    cont3--;
                     lista_bd.Add(new Teclado((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Teclado con ID {id}");
 
                     break;
                
-                case 3:
+                case 2:
                     
-                    cont3--;
                     lista_bd.Add(new Pantalla((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Pantalla con ID {id}");
 
                     break;
                 
-                case 4:
+                case 3:
                     
-                    cont3--;
                     lista_bd.Add(new Altavoz((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Altavoz con ID {id}");
@@ -166,30 +162,30 @@ namespace Catalogo.controller
             switch (opcion)
             {
 //Devuelve por TIPO igual:
-                case 1:
+                case 7:
 
                     return lista_bd.Where(p => p.Tipo == tipo).ToList() ;
                 
 //Devuelve por IDPRODUCTO igual:    
-                case 2:
+                case 8:
 
                     return lista_bd.Where(p => p.IdProducto == idProducto).ToList();
 
 //Devuelve por MARCA igual:    
-                case 3:
+                case 9:
 
                     return lista_bd.Where(p => p.Marca.ToLower().Contains(marca.ToLower())).ToList();
                     
 //Devuelve por PRECIO igual:
-                case 4:
+                case 10:
                     return lista_bd.Where(p => p.Precio == precio).ToList();
 
 //Devuelve por PRECIO SUPERIOR:
-                case 5:
+                case 11:
                     return lista_bd.Where(p => p.Precio > precio).ToList();
 
 //Devuelve por PRECIO INFERIOR:
-                case 6:
+                case 12:
                     return lista_bd.Where(p => p.Precio < precio).ToList();
 
                 default:
