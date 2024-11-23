@@ -39,3 +39,4 @@ C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-wind
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.genruntimeconfig.cache
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\ref\CatalogoForm.dll
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.BotonesOrdenarColumna.resources
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.BotonesOrdenarColumna.resources

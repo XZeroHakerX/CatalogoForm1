@@ -15,11 +15,13 @@ namespace CatalogoForm
         public BotonesOrdenarColumna()
         {
             InitializeComponent();
+            
         }
 
         private void btnOrdenarTipo_Click(object sender, EventArgs e)
         {
             MenuVer menuVer = new MenuVer(3);
+            this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
 
@@ -29,6 +31,7 @@ namespace CatalogoForm
         {
 
             MenuVer menuVer = new MenuVer(4);
+            this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
         }
@@ -37,6 +40,7 @@ namespace CatalogoForm
         {
 
             MenuVer menuVer = new MenuVer(5);
+            this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
         }
@@ -45,6 +49,7 @@ namespace CatalogoForm
         {
 
             MenuVer menuVer = new MenuVer(6);
+            this.Visible = false;
             menuVer.ShowDialog();
             this.Close();
         }
