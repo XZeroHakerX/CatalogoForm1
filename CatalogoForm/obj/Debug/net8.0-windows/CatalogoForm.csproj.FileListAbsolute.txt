@@ -43,3 +43,6 @@ C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debu
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.BotonesFiltrarProducto.resources
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.AgregarArticulo.resources
 C:\Users\Zero\Desktop\Proyectos\CatalogoForm1\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.MenuBorrar.resources
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.AgregarArticulo.resources
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.BotonesFiltrarProducto.resources
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows\CatalogoForm.MenuBorrar.resources
