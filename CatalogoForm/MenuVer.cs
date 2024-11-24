@@ -21,8 +21,8 @@ namespace CatalogoForm
         ControladorBD cbd;
         int cont = 0;
 
-        
-        
+
+
         //Constructor:
         public MenuVer(int opcion, int? tipo, int? idProducto, string? marca, double? precio)
         {
@@ -34,8 +34,8 @@ namespace CatalogoForm
 
         }
 
-        
-        
+
+
         //Metodo para traer la lista correcta:
         private void EleccionMenu(int opcion, int? tipo, int? idProducto, string? marca, double? precio)
         {
@@ -89,8 +89,8 @@ namespace CatalogoForm
             }
         }
 
-        
-        
+
+
         //Metodo para actualizar vista menu:
         private void MostrarMenu()
         {
@@ -109,8 +109,8 @@ namespace CatalogoForm
 
         }
 
-       
-        
+
+
         //Limpia los campos a "":
         private void LimpiaCampos()
         {
@@ -126,8 +126,8 @@ namespace CatalogoForm
             txtAtributo10.Text = "";
         }
 
-        
-       
+
+
         //Metodo para mostrar el articulo actual:
         private void MostrarArticulo()
         {
@@ -178,8 +178,8 @@ namespace CatalogoForm
             }
         }
 
-        
-        
+
+
         //Metodo para cambiar:
         private void AtributosSegunProductos()
         {
@@ -227,8 +227,8 @@ namespace CatalogoForm
 
         }
 
-        
-        
+
+
         //Metodo para comprobacion de Botones NAVEGACION:
         private void ActivarDesactivarNavegacion()
         {
@@ -266,8 +266,8 @@ namespace CatalogoForm
             }
         }
 
-        
-        
+
+
         //Metodo para el boton MODIFICAR:
         private void btnModificar_Click(object sender, EventArgs e)
         {
@@ -277,6 +277,9 @@ namespace CatalogoForm
             }
             else
             {
+
+                btnModificar.Enabled = false;
+                btnBorrar.Enabled = false;
                 btnGuardar.Visible = true;
                 btnCancelar.Visible = true;
                 btnAnterior.Enabled = false;
@@ -302,23 +305,74 @@ namespace CatalogoForm
                 txtAtributo8.BackColor = SystemColors.Window;
                 txtAtributo9.BackColor = SystemColors.Window;
                 txtAtributo10.BackColor = SystemColors.Window;
+
+
             }
 
         }
 
-        
-       
-        //Metodo para guardar os cambios:
+
+
+        //Metodo para guardar los cambios, inserta y sustituye el periferico:
         private void btnGuardar_Click(object sender, EventArgs e)
         {
 
+            int indice = cbd.DevolverIndice(aux[cont]);
+
+            if (aux[cont].Tipo == 0)
+            {
+                Raton r_aux = new Raton((TipoPeriferico)0, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                        Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
+
+                cbd.InsertarPeriferico(r_aux, indice);
+
+            }
+            else if (aux[cont].Tipo == 1)
+            {
+                Teclado t_aux = new Teclado((TipoPeriferico)1, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                        Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
+
+
+                cbd.InsertarPeriferico(t_aux, indice);
+            }
+            else if (aux[cont].Tipo == 2)
+            {
+                Pantalla p_aux = new Pantalla((TipoPeriferico)2, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                        Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
+
+                cbd.InsertarPeriferico(p_aux, indice);
+            }
+            else
+            {
+                Altavoz a_aux = new Altavoz((TipoPeriferico)3, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                        Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
+
+                cbd.InsertarPeriferico(a_aux, indice);
+            }
+
+            MessageBox.Show("Articulo modificado correctamente.", "Modificado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            EditableOff();
+            MostrarMenu();
+
+
         }
 
-       
-       
+
+
         //Metodo para el boton CANCELAR:
         private void btnCancelar_Click(object sender, EventArgs e)
         {
+            EditableOff();
+            MostrarArticulo();
+            ActivarDesactivarNavegacion();
+        }
+
+
+        //Metodo para salir de la edicion:
+        private void EditableOff()
+        {
+            btnModificar.Enabled = true;
+            btnBorrar.Enabled = true;
             btnGuardar.Visible = false;
             btnCancelar.Visible = false;
             txtId.ReadOnly = true;
@@ -340,12 +394,10 @@ namespace CatalogoForm
             txtAtributo8.BackColor = Color.SkyBlue;
             txtAtributo9.BackColor = Color.SkyBlue;
             txtAtributo10.BackColor = Color.SkyBlue;
-            MostrarArticulo();
-            ActivarDesactivarNavegacion();
         }
 
 
-       
+
         //Metodos para botones de NAVEGACION:
         private void btnPrimero_Click(object sender, EventArgs e)
         {
@@ -400,12 +452,12 @@ namespace CatalogoForm
             }
         }
 
-       
-        
+
+
         //Metodo para borrar articulo:
         private void btnBorrar_Click(object sender, EventArgs e)
         {
-            
+
 
             if (aux == null || aux.Count == 0)
             {
@@ -414,10 +466,10 @@ namespace CatalogoForm
             else
             {
                 DialogResult result = MessageBox.Show("¿Seguro que quieres borrar este articulo?", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
-                if(result == DialogResult.Yes)
+                if (result == DialogResult.Yes)
                 {
                     cbd.BorrarElemento(aux[cont]);
-                    
+
                     if (cont > (aux.Count - 1))
                     {
                         cont = (aux.Count - 1);
@@ -428,7 +480,10 @@ namespace CatalogoForm
 
             }
         }
-    
-    
+
+        private void btnAtras_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

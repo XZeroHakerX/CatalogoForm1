@@ -112,7 +112,8 @@ namespace CatalogoForm
 
         private void bntBorrar_Click(object sender, EventArgs e)
         {
-
+            MenuBorrar mb = new MenuBorrar();
+            mb.ShowDialog();
         }
     }
 }

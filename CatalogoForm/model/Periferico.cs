@@ -47,7 +47,7 @@ namespace Catalogo.model
         public override string ToString()
         {
             TipoPeriferico tipoPeriferico = (TipoPeriferico)Tipo;
-            return $"{tipoPeriferico.ToString()} //ID-> { IdProducto } //Marca-> { Marca } //Precio-> { Precio } //";
+            return $"{tipoPeriferico.ToString()}: { IdProducto } ({Marca}) -->> {Precio:C} //";
         }
 
         

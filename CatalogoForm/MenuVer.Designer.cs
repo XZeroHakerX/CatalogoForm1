@@ -61,6 +61,7 @@
             lblTipo = new Label();
             txtTipo = new TextBox();
             lblTitulo = new Label();
+            btnAtras = new Button();
             pnlProducto.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pbxImagen).BeginInit();
             SuspendLayout();
@@ -138,7 +139,7 @@
             btnModificar.Cursor = Cursors.Hand;
             btnModificar.FlatStyle = FlatStyle.Popup;
             btnModificar.Font = new Font("Segoe UI", 14F);
-            btnModificar.Location = new Point(809, 110);
+            btnModificar.Location = new Point(809, 125);
             btnModificar.Margin = new Padding(4);
             btnModificar.Name = "btnModificar";
             btnModificar.Size = new Size(156, 64);
@@ -149,10 +150,11 @@
             // 
             // btnBorrar
             // 
+            btnBorrar.BackColor = Color.IndianRed;
             btnBorrar.Cursor = Cursors.No;
             btnBorrar.FlatStyle = FlatStyle.Popup;
             btnBorrar.Font = new Font("Segoe UI", 14F);
-            btnBorrar.Location = new Point(809, 415);
+            btnBorrar.Location = new Point(809, 420);
             btnBorrar.Margin = new Padding(4);
             btnBorrar.Name = "btnBorrar";
             btnBorrar.Size = new Size(156, 64);
@@ -163,31 +165,33 @@
             // 
             // btnGuardar
             // 
+            btnGuardar.BackColor = Color.PaleGreen;
             btnGuardar.Cursor = Cursors.Hand;
             btnGuardar.FlatStyle = FlatStyle.Popup;
             btnGuardar.Font = new Font("Segoe UI", 14F);
-            btnGuardar.Location = new Point(809, 196);
+            btnGuardar.Location = new Point(809, 211);
             btnGuardar.Margin = new Padding(4);
             btnGuardar.Name = "btnGuardar";
             btnGuardar.Size = new Size(156, 64);
             btnGuardar.TabIndex = 7;
             btnGuardar.Text = "Guardar";
-            btnGuardar.UseVisualStyleBackColor = true;
+            btnGuardar.UseVisualStyleBackColor = false;
             btnGuardar.Visible = false;
             btnGuardar.Click += btnGuardar_Click;
             // 
             // btnCancelar
             // 
+            btnCancelar.BackColor = Color.Gainsboro;
             btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.FlatStyle = FlatStyle.Popup;
             btnCancelar.Font = new Font("Segoe UI", 14F);
-            btnCancelar.Location = new Point(809, 288);
+            btnCancelar.Location = new Point(809, 303);
             btnCancelar.Margin = new Padding(4);
             btnCancelar.Name = "btnCancelar";
             btnCancelar.Size = new Size(156, 60);
             btnCancelar.TabIndex = 8;
             btnCancelar.Text = "Cancelar";
-            btnCancelar.UseVisualStyleBackColor = true;
+            btnCancelar.UseVisualStyleBackColor = false;
             btnCancelar.Visible = false;
             btnCancelar.Click += btnCancelar_Click;
             // 
@@ -478,6 +482,22 @@
             lblTitulo.TabIndex = 19;
             lblTitulo.Text = "Lista Sin Ordenar";
             // 
+            // btnAtras
+            // 
+            btnAtras.BackColor = Color.Gainsboro;
+            btnAtras.Cursor = Cursors.Hand;
+            btnAtras.FlatStyle = FlatStyle.Popup;
+            btnAtras.Font = new Font("Segoe UI", 14F);
+            btnAtras.Location = new Point(809, 496);
+            btnAtras.Margin = new Padding(4);
+            btnAtras.Name = "btnAtras";
+            btnAtras.Size = new Size(156, 60);
+            btnAtras.TabIndex = 20;
+            btnAtras.Text = "Atrás";
+            btnAtras.UseVisualStyleBackColor = false;
+            btnAtras.Visible = false;
+            btnAtras.Click += btnAtras_Click;
+            // 
             // MenuVer
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -485,6 +505,7 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(990, 658);
+            Controls.Add(btnAtras);
             Controls.Add(lblTitulo);
             Controls.Add(txtTipo);
             Controls.Add(lblTipo);
@@ -544,5 +565,6 @@
         private TextBox txtPrecio;
         private TextBox txtTipo;
         private Label lblTitulo;
+        private Button btnAtras;
     }
 }

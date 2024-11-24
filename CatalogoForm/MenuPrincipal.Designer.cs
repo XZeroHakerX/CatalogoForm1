@@ -84,7 +84,7 @@
             bntAgregar.FlatAppearance.BorderSize = 4;
             bntAgregar.FlatStyle = FlatStyle.Popup;
             bntAgregar.Font = new Font("Yu Gothic UI", 18F, FontStyle.Bold);
-            bntAgregar.Location = new Point(735, 180);
+            bntAgregar.Location = new Point(767, 180);
             bntAgregar.Margin = new Padding(4);
             bntAgregar.Name = "bntAgregar";
             bntAgregar.Size = new Size(209, 116);
@@ -100,7 +100,7 @@
             bntBorrar.Cursor = Cursors.No;
             bntBorrar.FlatStyle = FlatStyle.Popup;
             bntBorrar.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntBorrar.Location = new Point(735, 380);
+            bntBorrar.Location = new Point(767, 402);
             bntBorrar.Margin = new Padding(4);
             bntBorrar.Name = "bntBorrar";
             bntBorrar.Size = new Size(209, 79);
@@ -114,7 +114,7 @@
             btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSalir.Cursor = Cursors.Hand;
             btnSalir.Font = new Font("Yu Gothic UI Semibold", 16F);
-            btnSalir.Location = new Point(735, 466);
+            btnSalir.Location = new Point(767, 488);
             btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(209, 51);
@@ -204,7 +204,7 @@
             pnlBotonesAgregar.Controls.Add(btnAgregarPantalla);
             pnlBotonesAgregar.Controls.Add(btnAgregarTeclado);
             pnlBotonesAgregar.Controls.Add(btnAgregarRaton);
-            pnlBotonesAgregar.Location = new Point(319, 179);
+            pnlBotonesAgregar.Location = new Point(361, 180);
             pnlBotonesAgregar.Margin = new Padding(4);
             pnlBotonesAgregar.Name = "pnlBotonesAgregar";
             pnlBotonesAgregar.Size = new Size(398, 338);
@@ -281,7 +281,7 @@
             BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(952, 546);
+            ClientSize = new Size(984, 568);
             Controls.Add(pnlBotonesAgregar);
             Controls.Add(pnBotonesVer);
             Controls.Add(btnSalir);

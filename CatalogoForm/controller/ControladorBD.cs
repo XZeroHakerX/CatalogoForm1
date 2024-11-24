@@ -144,7 +144,20 @@ namespace Catalogo.controller
 //Borrar elementos lista por indice:
         internal void BorrarElemento(int num_borrar)
         {
-            lista_bd.RemoveAt(num_borrar-1);
+            lista_bd.RemoveAt(num_borrar);
+            SobreescribirBD();
+        }
+        
+//Cuando modificamos un Articulo, llamamos a este para buscar indice en lista original y sustituir:
+        internal int DevolverIndice(Periferico peri)
+        {
+            return lista_bd.IndexOf(peri);
+        }
+
+//Cuando modificamos un Articulo, llamamos a este para sustituir:
+        internal void InsertarPeriferico(Periferico peri, int index)
+        {
+            lista_bd[index] = peri;
             SobreescribirBD();
         }
 

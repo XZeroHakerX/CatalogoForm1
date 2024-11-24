@@ -45,7 +45,7 @@
             pnlBotonesAgregar.Controls.Add(btnOrdenarIdproducto);
             pnlBotonesAgregar.Controls.Add(btnOrdenarTipo);
             pnlBotonesAgregar.Location = new Point(12, 38);
-            pnlBotonesAgregar.Margin = new Padding(4, 4, 4, 4);
+            pnlBotonesAgregar.Margin = new Padding(4);
             pnlBotonesAgregar.Name = "pnlBotonesAgregar";
             pnlBotonesAgregar.Size = new Size(781, 162);
             pnlBotonesAgregar.TabIndex = 7;
@@ -57,7 +57,7 @@
             btnOrdenarPrecio.FlatStyle = FlatStyle.Popup;
             btnOrdenarPrecio.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarPrecio.Location = new Point(410, 90);
-            btnOrdenarPrecio.Margin = new Padding(12, 12, 12, 12);
+            btnOrdenarPrecio.Margin = new Padding(12);
             btnOrdenarPrecio.Name = "btnOrdenarPrecio";
             btnOrdenarPrecio.Size = new Size(352, 61);
             btnOrdenarPrecio.TabIndex = 3;
@@ -72,7 +72,7 @@
             btnOrdenarMarca.FlatStyle = FlatStyle.Popup;
             btnOrdenarMarca.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarMarca.Location = new Point(410, 4);
-            btnOrdenarMarca.Margin = new Padding(12, 12, 12, 12);
+            btnOrdenarMarca.Margin = new Padding(12);
             btnOrdenarMarca.Name = "btnOrdenarMarca";
             btnOrdenarMarca.Size = new Size(352, 61);
             btnOrdenarMarca.TabIndex = 2;
@@ -87,7 +87,7 @@
             btnOrdenarIdproducto.FlatStyle = FlatStyle.Popup;
             btnOrdenarIdproducto.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarIdproducto.Location = new Point(34, 90);
-            btnOrdenarIdproducto.Margin = new Padding(12, 12, 12, 12);
+            btnOrdenarIdproducto.Margin = new Padding(12);
             btnOrdenarIdproducto.Name = "btnOrdenarIdproducto";
             btnOrdenarIdproducto.Size = new Size(352, 61);
             btnOrdenarIdproducto.TabIndex = 1;
@@ -102,7 +102,7 @@
             btnOrdenarTipo.FlatStyle = FlatStyle.Popup;
             btnOrdenarTipo.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarTipo.Location = new Point(34, 4);
-            btnOrdenarTipo.Margin = new Padding(12, 12, 12, 12);
+            btnOrdenarTipo.Margin = new Padding(12);
             btnOrdenarTipo.Name = "btnOrdenarTipo";
             btnOrdenarTipo.Size = new Size(352, 61);
             btnOrdenarTipo.TabIndex = 0;
@@ -114,6 +114,8 @@
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
+            AutoSize = true;
+            AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(826, 228);
             Controls.Add(pnlBotonesAgregar);
