@@ -65,7 +65,7 @@ namespace Catalogo.controller
 //Devuelve la lista ordenada por defecto.
         internal List<Periferico> OrdenarPorDefecto()
         {
-            List<Periferico> ordenada = lista_bd.ToList<Periferico>();
+            List<Periferico> ordenada = lista_bd;
             ordenada.Sort();
             return ordenada;
         }

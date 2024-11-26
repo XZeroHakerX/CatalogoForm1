@@ -38,7 +38,6 @@
             btnFiltrar = new Button();
             btnOrdenarPorAtributo = new Button();
             btnOrdenarDefecto = new Button();
-            btnSinOrdenar = new Button();
             pnlBotonesAgregar = new Panel();
             btnAgregarAltavoz = new Button();
             btnAgregarPantalla = new Button();
@@ -53,9 +52,10 @@
             lblMenuTitulo.AutoSize = true;
             lblMenuTitulo.BackColor = SystemColors.ActiveCaption;
             lblMenuTitulo.Font = new Font("Impact", 40F, FontStyle.Bold);
-            lblMenuTitulo.Location = new Point(35, 20);
+            lblMenuTitulo.Location = new Point(44, 25);
+            lblMenuTitulo.Margin = new Padding(4, 0, 4, 0);
             lblMenuTitulo.Name = "lblMenuTitulo";
-            lblMenuTitulo.Size = new Size(482, 82);
+            lblMenuTitulo.Size = new Size(571, 98);
             lblMenuTitulo.TabIndex = 0;
             lblMenuTitulo.Text = "MENU PRINCIPAL";
             // 
@@ -65,9 +65,10 @@
             btnVer.Cursor = Cursors.Hand;
             btnVer.FlatStyle = FlatStyle.Popup;
             btnVer.Font = new Font("Yu Gothic UI", 20F, FontStyle.Bold);
-            btnVer.Location = new Point(35, 144);
+            btnVer.Location = new Point(44, 180);
+            btnVer.Margin = new Padding(4);
             btnVer.Name = "btnVer";
-            btnVer.Size = new Size(167, 270);
+            btnVer.Size = new Size(209, 338);
             btnVer.TabIndex = 1;
             btnVer.Text = "Lista Articulos";
             btnVer.UseVisualStyleBackColor = false;
@@ -82,9 +83,10 @@
             bntAgregar.FlatAppearance.BorderSize = 4;
             bntAgregar.FlatStyle = FlatStyle.Popup;
             bntAgregar.Font = new Font("Yu Gothic UI", 18F, FontStyle.Bold);
-            bntAgregar.Location = new Point(614, 144);
+            bntAgregar.Location = new Point(865, 180);
+            bntAgregar.Margin = new Padding(4);
             bntAgregar.Name = "bntAgregar";
-            bntAgregar.Size = new Size(167, 93);
+            bntAgregar.Size = new Size(209, 116);
             bntAgregar.TabIndex = 2;
             bntAgregar.Text = "Agregar Articulo";
             bntAgregar.UseVisualStyleBackColor = false;
@@ -97,9 +99,10 @@
             bntBorrar.Cursor = Cursors.No;
             bntBorrar.FlatStyle = FlatStyle.Popup;
             bntBorrar.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntBorrar.Location = new Point(614, 322);
+            bntBorrar.Location = new Point(865, 396);
+            bntBorrar.Margin = new Padding(4);
             bntBorrar.Name = "bntBorrar";
-            bntBorrar.Size = new Size(167, 63);
+            bntBorrar.Size = new Size(209, 79);
             bntBorrar.TabIndex = 3;
             bntBorrar.Text = "BORRAR";
             bntBorrar.UseVisualStyleBackColor = false;
@@ -110,9 +113,10 @@
             btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSalir.Cursor = Cursors.Hand;
             btnSalir.Font = new Font("Yu Gothic UI Semibold", 16F);
-            btnSalir.Location = new Point(614, 390);
+            btnSalir.Location = new Point(865, 482);
+            btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
-            btnSalir.Size = new Size(167, 41);
+            btnSalir.Size = new Size(209, 51);
             btnSalir.TabIndex = 4;
             btnSalir.Text = "Salir";
             btnSalir.UseVisualStyleBackColor = true;
@@ -124,10 +128,10 @@
             pnBotonesVer.Controls.Add(btnFiltrar);
             pnBotonesVer.Controls.Add(btnOrdenarPorAtributo);
             pnBotonesVer.Controls.Add(btnOrdenarDefecto);
-            pnBotonesVer.Controls.Add(btnSinOrdenar);
-            pnBotonesVer.Location = new Point(209, 144);
+            pnBotonesVer.Location = new Point(274, 180);
+            pnBotonesVer.Margin = new Padding(4);
             pnBotonesVer.Name = "pnBotonesVer";
-            pnBotonesVer.Size = new Size(318, 270);
+            pnBotonesVer.Size = new Size(398, 338);
             pnBotonesVer.TabIndex = 5;
             pnBotonesVer.Visible = false;
             // 
@@ -137,10 +141,10 @@
             btnFiltrar.Cursor = Cursors.Hand;
             btnFiltrar.FlatStyle = FlatStyle.Popup;
             btnFiltrar.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnFiltrar.Location = new Point(27, 210);
-            btnFiltrar.Margin = new Padding(10, 10, 10, 10);
+            btnFiltrar.Location = new Point(34, 241);
+            btnFiltrar.Margin = new Padding(12);
             btnFiltrar.Name = "btnFiltrar";
-            btnFiltrar.Size = new Size(282, 49);
+            btnFiltrar.Size = new Size(352, 85);
             btnFiltrar.TabIndex = 3;
             btnFiltrar.Text = "FILTRAR Productos";
             btnFiltrar.UseVisualStyleBackColor = false;
@@ -152,10 +156,10 @@
             btnOrdenarPorAtributo.Cursor = Cursors.Hand;
             btnOrdenarPorAtributo.FlatStyle = FlatStyle.Popup;
             btnOrdenarPorAtributo.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnOrdenarPorAtributo.Location = new Point(27, 141);
-            btnOrdenarPorAtributo.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarPorAtributo.Location = new Point(34, 129);
+            btnOrdenarPorAtributo.Margin = new Padding(12);
             btnOrdenarPorAtributo.Name = "btnOrdenarPorAtributo";
-            btnOrdenarPorAtributo.Size = new Size(282, 49);
+            btnOrdenarPorAtributo.Size = new Size(352, 88);
             btnOrdenarPorAtributo.TabIndex = 2;
             btnOrdenarPorAtributo.Text = "Ordenar Por Atributo";
             btnOrdenarPorAtributo.UseVisualStyleBackColor = false;
@@ -167,29 +171,14 @@
             btnOrdenarDefecto.Cursor = Cursors.Hand;
             btnOrdenarDefecto.FlatStyle = FlatStyle.Popup;
             btnOrdenarDefecto.Font = new Font("Yu Gothic UI", 12F, FontStyle.Bold);
-            btnOrdenarDefecto.Location = new Point(27, 72);
-            btnOrdenarDefecto.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarDefecto.Location = new Point(34, 9);
+            btnOrdenarDefecto.Margin = new Padding(12);
             btnOrdenarDefecto.Name = "btnOrdenarDefecto";
-            btnOrdenarDefecto.Size = new Size(282, 49);
+            btnOrdenarDefecto.Size = new Size(352, 96);
             btnOrdenarDefecto.TabIndex = 1;
-            btnOrdenarDefecto.Text = "Lista Ordenada X Defecto";
+            btnOrdenarDefecto.Text = "Lista Ordenada Por Defecto";
             btnOrdenarDefecto.UseVisualStyleBackColor = false;
             btnOrdenarDefecto.Click += btnOrdenarDefecto_Click;
-            // 
-            // btnSinOrdenar
-            // 
-            btnSinOrdenar.BackColor = Color.DodgerBlue;
-            btnSinOrdenar.Cursor = Cursors.Hand;
-            btnSinOrdenar.FlatStyle = FlatStyle.Popup;
-            btnSinOrdenar.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnSinOrdenar.Location = new Point(27, 3);
-            btnSinOrdenar.Margin = new Padding(10, 10, 10, 10);
-            btnSinOrdenar.Name = "btnSinOrdenar";
-            btnSinOrdenar.Size = new Size(282, 49);
-            btnSinOrdenar.TabIndex = 0;
-            btnSinOrdenar.Text = "Lista Sin Ordenar";
-            btnSinOrdenar.UseVisualStyleBackColor = false;
-            btnSinOrdenar.Click += btnSinOrdenar_Click;
             // 
             // pnlBotonesAgregar
             // 
@@ -198,9 +187,10 @@
             pnlBotonesAgregar.Controls.Add(btnAgregarPantalla);
             pnlBotonesAgregar.Controls.Add(btnAgregarTeclado);
             pnlBotonesAgregar.Controls.Add(btnAgregarRaton);
-            pnlBotonesAgregar.Location = new Point(289, 144);
+            pnlBotonesAgregar.Location = new Point(285, 201);
+            pnlBotonesAgregar.Margin = new Padding(4);
             pnlBotonesAgregar.Name = "pnlBotonesAgregar";
-            pnlBotonesAgregar.Size = new Size(318, 270);
+            pnlBotonesAgregar.Size = new Size(562, 303);
             pnlBotonesAgregar.TabIndex = 6;
             pnlBotonesAgregar.Visible = false;
             // 
@@ -210,12 +200,15 @@
             btnAgregarAltavoz.Cursor = Cursors.Hand;
             btnAgregarAltavoz.FlatStyle = FlatStyle.Popup;
             btnAgregarAltavoz.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnAgregarAltavoz.Location = new Point(27, 210);
-            btnAgregarAltavoz.Margin = new Padding(10, 10, 10, 10);
+            btnAgregarAltavoz.Image = (Image)resources.GetObject("btnAgregarAltavoz.Image");
+            btnAgregarAltavoz.Location = new Point(283, 154);
+            btnAgregarAltavoz.Margin = new Padding(12);
             btnAgregarAltavoz.Name = "btnAgregarAltavoz";
-            btnAgregarAltavoz.Size = new Size(282, 49);
+            btnAgregarAltavoz.Size = new Size(271, 133);
             btnAgregarAltavoz.TabIndex = 3;
             btnAgregarAltavoz.Text = "Agregar ALTAVOZ";
+            btnAgregarAltavoz.TextAlign = ContentAlignment.MiddleLeft;
+            btnAgregarAltavoz.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnAgregarAltavoz.UseVisualStyleBackColor = false;
             btnAgregarAltavoz.Click += btnAgregarAltavoz_Click;
             // 
@@ -225,12 +218,16 @@
             btnAgregarPantalla.Cursor = Cursors.Hand;
             btnAgregarPantalla.FlatStyle = FlatStyle.Popup;
             btnAgregarPantalla.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnAgregarPantalla.Location = new Point(27, 141);
-            btnAgregarPantalla.Margin = new Padding(10, 10, 10, 10);
+            btnAgregarPantalla.Image = (Image)resources.GetObject("btnAgregarPantalla.Image");
+            btnAgregarPantalla.ImageAlign = ContentAlignment.MiddleRight;
+            btnAgregarPantalla.Location = new Point(0, 154);
+            btnAgregarPantalla.Margin = new Padding(12);
             btnAgregarPantalla.Name = "btnAgregarPantalla";
-            btnAgregarPantalla.Size = new Size(282, 49);
+            btnAgregarPantalla.Size = new Size(271, 133);
             btnAgregarPantalla.TabIndex = 2;
             btnAgregarPantalla.Text = "Agregar PANTALLA";
+            btnAgregarPantalla.TextAlign = ContentAlignment.MiddleLeft;
+            btnAgregarPantalla.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnAgregarPantalla.UseVisualStyleBackColor = false;
             btnAgregarPantalla.Click += btnAgregarPantalla_Click;
             // 
@@ -240,12 +237,15 @@
             btnAgregarTeclado.Cursor = Cursors.Hand;
             btnAgregarTeclado.FlatStyle = FlatStyle.Popup;
             btnAgregarTeclado.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnAgregarTeclado.Location = new Point(27, 72);
-            btnAgregarTeclado.Margin = new Padding(10, 10, 10, 10);
+            btnAgregarTeclado.Image = (Image)resources.GetObject("btnAgregarTeclado.Image");
+            btnAgregarTeclado.Location = new Point(283, 8);
+            btnAgregarTeclado.Margin = new Padding(12);
             btnAgregarTeclado.Name = "btnAgregarTeclado";
-            btnAgregarTeclado.Size = new Size(282, 49);
+            btnAgregarTeclado.Size = new Size(271, 130);
             btnAgregarTeclado.TabIndex = 1;
             btnAgregarTeclado.Text = "Agregar TECLADO";
+            btnAgregarTeclado.TextAlign = ContentAlignment.MiddleLeft;
+            btnAgregarTeclado.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnAgregarTeclado.UseVisualStyleBackColor = false;
             btnAgregarTeclado.Click += btnAgregarTeclado_Click;
             // 
@@ -255,25 +255,29 @@
             btnAgregarRaton.Cursor = Cursors.Hand;
             btnAgregarRaton.FlatStyle = FlatStyle.Popup;
             btnAgregarRaton.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnAgregarRaton.Location = new Point(27, 3);
-            btnAgregarRaton.Margin = new Padding(10, 10, 10, 10);
+            btnAgregarRaton.Image = (Image)resources.GetObject("btnAgregarRaton.Image");
+            btnAgregarRaton.Location = new Point(0, 8);
+            btnAgregarRaton.Margin = new Padding(12);
             btnAgregarRaton.Name = "btnAgregarRaton";
-            btnAgregarRaton.Size = new Size(282, 49);
+            btnAgregarRaton.RightToLeft = RightToLeft.No;
+            btnAgregarRaton.Size = new Size(271, 130);
             btnAgregarRaton.TabIndex = 0;
             btnAgregarRaton.Text = "Agregar RATON";
+            btnAgregarRaton.TextAlign = ContentAlignment.MiddleLeft;
+            btnAgregarRaton.TextImageRelation = TextImageRelation.TextBeforeImage;
             btnAgregarRaton.UseVisualStyleBackColor = false;
             btnAgregarRaton.Click += btnAgregarRaton_Click;
             // 
             // MenuPrincipal
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(787, 454);
+            ClientSize = new Size(1081, 562);
             Controls.Add(pnlBotonesAgregar);
             Controls.Add(pnBotonesVer);
             Controls.Add(btnSalir);
@@ -283,6 +287,7 @@
             Controls.Add(lblMenuTitulo);
             DoubleBuffered = true;
             FormBorderStyle = FormBorderStyle.Fixed3D;
+            Margin = new Padding(4);
             MaximizeBox = false;
             Name = "MenuPrincipal";
             RightToLeft = RightToLeft.No;
@@ -305,7 +310,6 @@
         private Button btnFiltrar;
         private Button btnOrdenarPorAtributo;
         private Button btnOrdenarDefecto;
-        private Button btnSinOrdenar;
         private Panel pnlBotonesAgregar;
         private Button btnAgregarAltavoz;
         private Button btnAgregarPantalla;

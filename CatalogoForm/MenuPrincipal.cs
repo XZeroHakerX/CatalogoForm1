@@ -56,11 +56,12 @@ namespace CatalogoForm
             }
         }
 
-        private void btnSinOrdenar_Click(object sender, EventArgs e)
+        /*private void btnSinOrdenar_Click(object sender, EventArgs e)
         {
             MenuVer menuVer = new MenuVer(1, null, null, null, null);
             menuVer.ShowDialog();
         }
+        */
 
         private void btnOrdenarDefecto_Click(object sender, EventArgs e)
         {
