@@ -11,8 +11,8 @@ namespace Catalogo.model
         int pulgadas;
         
 
-        public Pantalla(TipoPeriferico tipo, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios, int pulgadas, bool tieneAltavoces, bool esHd )
-            : base(tipo, idProducto, marca, precio, rangoVolumen, color, decibelios)
+        public Pantalla(TipoPeriferico tipo, int img, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios, int pulgadas, bool tieneAltavoces, bool esHd )
+            : base(tipo, img, idProducto, marca, precio, rangoVolumen, color, decibelios)
         {
             Pulgadas = pulgadas;
             TieneAltavoces = tieneAltavoces;

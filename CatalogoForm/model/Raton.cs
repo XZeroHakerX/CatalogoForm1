@@ -12,8 +12,8 @@ namespace Catalogo.model
         private int dpi;
         
 
-        public Raton(TipoPeriferico tipo, int idProducto, string marca, double precio, int numeroBotones, string tipoSeñal, double voltaje, int dpi, bool hergonomico, bool ruletaCentral) 
-            : base(tipo, idProducto, marca, precio, numeroBotones, tipoSeñal, voltaje)
+        public Raton(TipoPeriferico tipo, int img, int idProducto, string marca, double precio, int numeroBotones, string tipoSeñal, double voltaje, int dpi, bool hergonomico, bool ruletaCentral) 
+            : base(tipo, img, idProducto, marca, precio, numeroBotones, tipoSeñal, voltaje)
         {
             Dpi = dpi;
             Hergonomico = hergonomico;

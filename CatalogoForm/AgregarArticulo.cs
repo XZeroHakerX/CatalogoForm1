@@ -18,6 +18,7 @@ namespace CatalogoForm
 
         int articuloElegido;
         ControladorBD cbd;
+        string rutaImagenSeleccionada;
         public AgregarArticulo(int articulo)
         {
             cbd = ControladorBD.getControlador();
@@ -50,9 +51,20 @@ namespace CatalogoForm
 
         private void btnGuardar_Click(object sender, EventArgs e)
         {
+            int contImg;
+            if(pbxImagen.Image == null)
+            {
+                contImg = 0;
+            }
+            else
+            {
+                contImg = ++ControladorBD.contImg;
+                cbd.GuardarImagen(rutaImagenSeleccionada, contImg);
+            }
+
             try
             {
-                cbd.AgregarElemento(articuloElegido, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                cbd.AgregarElemento(articuloElegido, contImg , Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(comboAtribute9.SelectedItem.ToString()), Boolean.Parse(comboAtribute10.SelectedItem.ToString()));
 
                 MessageBox.Show("Articulo agregado correctamente.", "Agregado", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -112,6 +124,25 @@ namespace CatalogoForm
             }
         }
 
-        
+        private void btnCargarImagen_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog imagenDialog = new OpenFileDialog())
+            {
+                imagenDialog.Title = "Seleccione una imagen";
+                imagenDialog.Filter = "Archivos de Imagen|*.jpep;*jpg";
+                imagenDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+                // Mostrar el diálogo y cargar la imagen si el usuario presiona OK
+                if (imagenDialog.ShowDialog() == DialogResult.OK)
+                {
+                    rutaImagenSeleccionada = imagenDialog.FileName;
+
+                    // Cargar la imagen en el PictureBox
+                    System.Drawing.Image img = System.Drawing.Image.FromFile(rutaImagenSeleccionada);
+                    pbxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbxImagen.Image = img;
+                }
+            }
+        }
     }
 }

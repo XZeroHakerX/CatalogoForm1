@@ -44,10 +44,9 @@
             pnlBotonesAgregar.Controls.Add(btnOrdenarMarca);
             pnlBotonesAgregar.Controls.Add(btnOrdenarIdproducto);
             pnlBotonesAgregar.Controls.Add(btnOrdenarTipo);
-            pnlBotonesAgregar.Location = new Point(12, 38);
-            pnlBotonesAgregar.Margin = new Padding(4);
+            pnlBotonesAgregar.Location = new Point(10, 30);
             pnlBotonesAgregar.Name = "pnlBotonesAgregar";
-            pnlBotonesAgregar.Size = new Size(781, 162);
+            pnlBotonesAgregar.Size = new Size(625, 130);
             pnlBotonesAgregar.TabIndex = 7;
             // 
             // btnOrdenarPrecio
@@ -56,10 +55,10 @@
             btnOrdenarPrecio.Cursor = Cursors.Hand;
             btnOrdenarPrecio.FlatStyle = FlatStyle.Popup;
             btnOrdenarPrecio.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnOrdenarPrecio.Location = new Point(410, 90);
-            btnOrdenarPrecio.Margin = new Padding(12);
+            btnOrdenarPrecio.Location = new Point(328, 72);
+            btnOrdenarPrecio.Margin = new Padding(10, 10, 10, 10);
             btnOrdenarPrecio.Name = "btnOrdenarPrecio";
-            btnOrdenarPrecio.Size = new Size(352, 61);
+            btnOrdenarPrecio.Size = new Size(282, 49);
             btnOrdenarPrecio.TabIndex = 3;
             btnOrdenarPrecio.Text = "Por PRECIO";
             btnOrdenarPrecio.UseVisualStyleBackColor = false;
@@ -71,10 +70,10 @@
             btnOrdenarMarca.Cursor = Cursors.Hand;
             btnOrdenarMarca.FlatStyle = FlatStyle.Popup;
             btnOrdenarMarca.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnOrdenarMarca.Location = new Point(410, 4);
-            btnOrdenarMarca.Margin = new Padding(12);
+            btnOrdenarMarca.Location = new Point(328, 3);
+            btnOrdenarMarca.Margin = new Padding(10, 10, 10, 10);
             btnOrdenarMarca.Name = "btnOrdenarMarca";
-            btnOrdenarMarca.Size = new Size(352, 61);
+            btnOrdenarMarca.Size = new Size(282, 49);
             btnOrdenarMarca.TabIndex = 2;
             btnOrdenarMarca.Text = "Por MARCA";
             btnOrdenarMarca.UseVisualStyleBackColor = false;
@@ -86,10 +85,10 @@
             btnOrdenarIdproducto.Cursor = Cursors.Hand;
             btnOrdenarIdproducto.FlatStyle = FlatStyle.Popup;
             btnOrdenarIdproducto.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnOrdenarIdproducto.Location = new Point(34, 90);
-            btnOrdenarIdproducto.Margin = new Padding(12);
+            btnOrdenarIdproducto.Location = new Point(27, 72);
+            btnOrdenarIdproducto.Margin = new Padding(10, 10, 10, 10);
             btnOrdenarIdproducto.Name = "btnOrdenarIdproducto";
-            btnOrdenarIdproducto.Size = new Size(352, 61);
+            btnOrdenarIdproducto.Size = new Size(282, 49);
             btnOrdenarIdproducto.TabIndex = 1;
             btnOrdenarIdproducto.Text = "Por IDPRODUCTO";
             btnOrdenarIdproducto.UseVisualStyleBackColor = false;
@@ -101,10 +100,10 @@
             btnOrdenarTipo.Cursor = Cursors.Hand;
             btnOrdenarTipo.FlatStyle = FlatStyle.Popup;
             btnOrdenarTipo.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
-            btnOrdenarTipo.Location = new Point(34, 4);
-            btnOrdenarTipo.Margin = new Padding(12);
+            btnOrdenarTipo.Location = new Point(27, 3);
+            btnOrdenarTipo.Margin = new Padding(10, 10, 10, 10);
             btnOrdenarTipo.Name = "btnOrdenarTipo";
-            btnOrdenarTipo.Size = new Size(352, 61);
+            btnOrdenarTipo.Size = new Size(282, 49);
             btnOrdenarTipo.TabIndex = 0;
             btnOrdenarTipo.Text = "Por TIPO";
             btnOrdenarTipo.UseVisualStyleBackColor = false;
@@ -112,13 +111,14 @@
             // 
             // BotonesOrdenarColumna
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
-            ClientSize = new Size(826, 228);
+            ClientSize = new Size(661, 182);
             Controls.Add(pnlBotonesAgregar);
+            FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(2);
             Name = "BotonesOrdenarColumna";
             StartPosition = FormStartPosition.CenterScreen;

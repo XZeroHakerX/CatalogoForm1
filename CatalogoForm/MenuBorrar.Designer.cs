@@ -42,10 +42,11 @@
             clstBorrar.Font = new Font("Segoe UI", 14F);
             clstBorrar.FormattingEnabled = true;
             clstBorrar.HorizontalScrollbar = true;
-            clstBorrar.Location = new Point(44, 28);
+            clstBorrar.Location = new Point(35, 22);
+            clstBorrar.Margin = new Padding(2, 2, 2, 2);
             clstBorrar.Name = "clstBorrar";
             clstBorrar.ScrollAlwaysVisible = true;
-            clstBorrar.Size = new Size(1254, 760);
+            clstBorrar.Size = new Size(1004, 582);
             clstBorrar.TabIndex = 0;
             // 
             // bntBorrar
@@ -55,10 +56,9 @@
             bntBorrar.Cursor = Cursors.No;
             bntBorrar.FlatStyle = FlatStyle.Popup;
             bntBorrar.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntBorrar.Location = new Point(123, 856);
-            bntBorrar.Margin = new Padding(4);
+            bntBorrar.Location = new Point(98, 685);
             bntBorrar.Name = "bntBorrar";
-            bntBorrar.Size = new Size(209, 79);
+            bntBorrar.Size = new Size(167, 63);
             bntBorrar.TabIndex = 4;
             bntBorrar.Text = "BORRAR";
             bntBorrar.UseVisualStyleBackColor = false;
@@ -71,10 +71,9 @@
             btnCancelar.Cursor = Cursors.Hand;
             btnCancelar.FlatStyle = FlatStyle.Popup;
             btnCancelar.Font = new Font("Segoe UI", 14F);
-            btnCancelar.Location = new Point(1052, 893);
-            btnCancelar.Margin = new Padding(4);
+            btnCancelar.Location = new Point(842, 714);
             btnCancelar.Name = "btnCancelar";
-            btnCancelar.Size = new Size(156, 42);
+            btnCancelar.Size = new Size(125, 34);
             btnCancelar.TabIndex = 26;
             btnCancelar.Text = "Cancelar";
             btnCancelar.UseVisualStyleBackColor = false;
@@ -86,11 +85,10 @@
             btnMas.BackColor = Color.Azure;
             btnMas.Cursor = Cursors.Hand;
             btnMas.FlatStyle = FlatStyle.Popup;
-            btnMas.Font = new Font("Segoe UI", 14F);
-            btnMas.Location = new Point(396, 856);
-            btnMas.Margin = new Padding(4);
+            btnMas.Font = new Font("Segoe UI", 12F);
+            btnMas.Location = new Point(317, 685);
             btnMas.Name = "btnMas";
-            btnMas.Size = new Size(254, 79);
+            btnMas.Size = new Size(203, 63);
             btnMas.TabIndex = 27;
             btnMas.Text = "MAS DETALLES";
             btnMas.UseVisualStyleBackColor = false;
@@ -102,11 +100,10 @@
             btnMenos.BackColor = Color.Azure;
             btnMenos.Cursor = Cursors.Hand;
             btnMenos.FlatStyle = FlatStyle.Popup;
-            btnMenos.Font = new Font("Segoe UI", 14F);
-            btnMenos.Location = new Point(658, 856);
-            btnMenos.Margin = new Padding(4);
+            btnMenos.Font = new Font("Segoe UI", 12F);
+            btnMenos.Location = new Point(526, 685);
             btnMenos.Name = "btnMenos";
-            btnMenos.Size = new Size(254, 79);
+            btnMenos.Size = new Size(203, 63);
             btnMenos.TabIndex = 28;
             btnMenos.Text = "MENOS DETALLES";
             btnMenos.UseVisualStyleBackColor = false;
@@ -115,15 +112,16 @@
             // 
             // MenuBorrar
             // 
-            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCoral;
-            ClientSize = new Size(1351, 961);
+            ClientSize = new Size(1081, 769);
             Controls.Add(btnMenos);
             Controls.Add(btnMas);
             Controls.Add(btnCancelar);
             Controls.Add(bntBorrar);
             Controls.Add(clstBorrar);
+            Margin = new Padding(2, 2, 2, 2);
             Name = "MenuBorrar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Borrar Articulo/s";

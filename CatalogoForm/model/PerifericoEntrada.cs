@@ -11,8 +11,8 @@ namespace Catalogo.model
         int numBotones;
         double voltaje;
 
-        internal PerifericoEntrada(TipoPeriferico tipo, int idProducto, string marca, double precio, int numBotones, string tipoSeñal, double voltaje) 
-            : base(tipo, idProducto, marca, precio) 
+        internal PerifericoEntrada(TipoPeriferico tipo,int img, int idProducto, string marca, double precio, int numBotones, string tipoSeñal, double voltaje) 
+            : base(tipo, img, idProducto, marca, precio) 
         {
             NumBotones = numBotones;
             TipoSenal = tipoSeñal;

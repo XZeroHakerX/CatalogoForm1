@@ -12,8 +12,8 @@ namespace Catalogo.model
         
         double decibelios;
 
-        internal PerifericoSalida(TipoPeriferico tipo, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios)
-            : base(tipo, idProducto, marca, precio) 
+        internal PerifericoSalida(TipoPeriferico tipo, int img, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios)
+            : base(tipo, img, idProducto, marca, precio) 
         {
             RangoVolumen = rangoVolumen;
             Color = color;

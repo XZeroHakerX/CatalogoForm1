@@ -12,8 +12,8 @@ namespace Catalogo.model
      
    
 
-        public Altavoz(TipoPeriferico tipo, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios, int alto, bool sonidoHq, bool tieneBotonApagado)
-            : base( tipo, idProducto, marca, precio, rangoVolumen, color, decibelios)
+        public Altavoz(TipoPeriferico tipo, int img, int idProducto, string marca, double precio, int rangoVolumen, string color, double decibelios, int alto, bool sonidoHq, bool tieneBotonApagado)
+            : base( tipo, img, idProducto, marca, precio, rangoVolumen, color, decibelios)
         {
             Alto = alto;
             SonidoHq = sonidoHq;

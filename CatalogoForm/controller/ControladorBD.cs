@@ -10,10 +10,16 @@ namespace Catalogo.controller
 
     public class ControladorBD
     {
+        public static int contImg = 0;
+
+
 //Ruta archivo:
         internal string RUTA = "catalogo.dat";
-        
-//Lista privada con la que se trabaja:
+
+        //Ruta imagenes:
+        internal string RUTAIMAGENES = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "img");
+
+        //Lista privada con la que se trabaja:
         private List<Periferico> lista_bd = new List<Periferico>();
 
         private static ControladorBD unico;
@@ -22,6 +28,22 @@ namespace Catalogo.controller
         private ControladorBD()
         {
             lista_bd = UtilidadesBD.LeerBd(RUTA);
+            //Controlo las imagenes que entran de la base de datos.
+
+
+            if (!Directory.Exists(RUTAIMAGENES))
+            {
+                Directory.CreateDirectory(RUTAIMAGENES);
+            }
+            
+
+            foreach(Periferico periferico in lista_bd)
+            {
+                if (contImg < periferico.Img)
+                {
+                    contImg = periferico.Img;
+                }
+            }
         }
 
 //Escribir datos en el archivo:
@@ -96,7 +118,7 @@ namespace Catalogo.controller
 
 
 //Agrega elementos a la lista
-        internal void AgregarElemento(int? cont3, int id, string marca, double precio, int a1, string a2, double a3, int a4, bool a5, bool a6)
+        internal void AgregarElemento(int? cont3, int img, int id, string marca, double precio, int a1, string a2, double a3, int a4, bool a5, bool a6)
         {
            
             
@@ -109,7 +131,7 @@ namespace Catalogo.controller
             {
                 case 0:
                     
-                    lista_bd.Add(new Raton((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
+                    lista_bd.Add(new Raton((TipoPeriferico)cont3, img, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Raton con ID {id}");
 
@@ -117,7 +139,7 @@ namespace Catalogo.controller
                 
                 case 1:
                     
-                    lista_bd.Add(new Teclado((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
+                    lista_bd.Add(new Teclado((TipoPeriferico)cont3, img, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Teclado con ID {id}");
 
@@ -125,7 +147,7 @@ namespace Catalogo.controller
                
                 case 2:
                     
-                    lista_bd.Add(new Pantalla((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
+                    lista_bd.Add(new Pantalla((TipoPeriferico)cont3, img, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Pantalla con ID {id}");
 
@@ -133,7 +155,7 @@ namespace Catalogo.controller
                 
                 case 3:
                     
-                    lista_bd.Add(new Altavoz((TipoPeriferico)cont3, id, marca, precio, a1, a2, a3, a4, a5, a6));
+                    lista_bd.Add(new Altavoz((TipoPeriferico)cont3, img, id, marca, precio, a1, a2, a3, a4, a5, a6));
                     SobreescribirBD();
                     Console.WriteLine($"Añadido Altavoz con ID {id}");
 
@@ -235,6 +257,13 @@ namespace Catalogo.controller
             SobreescribirBD();
         }
 
+        internal void GuardarImagen(String pathImage, int contImg)
+        {
+            string nuevoNombre = $"{contImg}.jpg";
+            string rutaDestino = Path.Combine(RUTAIMAGENES, nuevoNombre);
+
+            File.Copy(pathImage, rutaDestino, true);
+        }
     }
 
 }

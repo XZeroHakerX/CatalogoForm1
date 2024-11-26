@@ -11,8 +11,8 @@ namespace Catalogo.model
     {
         private int numTeclasNumerico;
 
-        public Teclado(TipoPeriferico tipo, int idProducto, string marca, double precio, int numeroBotones, string tipoSeñal, double voltaje, int numTeclasNumerico, bool esMecanico, bool tecladoNumerico)
-            : base(  tipo, idProducto, marca, precio, numeroBotones, tipoSeñal, voltaje)
+        public Teclado(TipoPeriferico tipo, int img, int idProducto, string marca, double precio, int numeroBotones, string tipoSeñal, double voltaje, int numTeclasNumerico, bool esMecanico, bool tecladoNumerico)
+            : base(  tipo, img, idProducto, marca, precio, numeroBotones, tipoSeñal, voltaje)
         {
             NumTeclasNumerico = numTeclasNumerico;
             EsMecanico = esMecanico;

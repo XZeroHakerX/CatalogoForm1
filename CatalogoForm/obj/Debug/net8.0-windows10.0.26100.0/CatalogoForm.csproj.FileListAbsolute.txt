@@ -1,4 +1,3 @@
-C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\bin\Debug\net8.0-windows10.0.26100.0\catalogo.dat
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\bin\Debug\net8.0-windows10.0.26100.0\CatalogoForm.exe
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\bin\Debug\net8.0-windows10.0.26100.0\CatalogoForm.deps.json
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\bin\Debug\net8.0-windows10.0.26100.0\CatalogoForm.runtimeconfig.json
@@ -25,3 +24,4 @@ C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debu
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows10.0.26100.0\CatalogoForm.pdb
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows10.0.26100.0\CatalogoForm.genruntimeconfig.cache
 C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\obj\Debug\net8.0-windows10.0.26100.0\ref\CatalogoForm.dll
+C:\Users\zeroh\Desktop\Proyectos\CatalogoForm\CatalogoForm\CatalogoForm\bin\Debug\net8.0-windows10.0.26100.0\catalogo.dat

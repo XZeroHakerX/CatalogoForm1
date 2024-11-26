@@ -19,15 +19,18 @@ namespace Catalogo.model
 
         private int tipo;
         private double precio;
+        private int img;
 
-        internal Periferico(TipoPeriferico tipo, int idProducto, string marca, double precio)
+        internal Periferico(TipoPeriferico tipo, int img, int idProducto, string marca, double precio)
         {
             Tipo = (int)tipo;
+            Img = img;
             IdProducto = idProducto;
             Marca = marca;
             Precio = precio;
         }
 
+        public int Img { get; set; }
         public int IdProducto { get; set; }
         public string Marca { get; set; }
         public double Precio { get { return this.precio; }

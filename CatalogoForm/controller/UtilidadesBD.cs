@@ -27,6 +27,8 @@ namespace Catalogo.controller
                         
                             int o0 = lectura.ReadInt32();
 
+                            int o10 = lectura.ReadInt32();
+
                             int o1 = lectura.ReadInt32();
 
                             string o2 = lectura.ReadString().Trim();
@@ -48,16 +50,16 @@ namespace Catalogo.controller
                             switch (o0)
                             {
                                 case 0:
-                                    lista.Add(new Raton((TipoPeriferico)o0, o1, o2, o3, o4, o5, o6, o7, o8, o9));
+                                    lista.Add(new Raton((TipoPeriferico)o0, o10, o1, o2, o3, o4, o5, o6, o7, o8, o9));
                                     break;
                                 case 1:
-                                    lista.Add(new Teclado((TipoPeriferico)o0, o1, o2, o3, o4, o5, o6, o7, o8, o9));
+                                    lista.Add(new Teclado((TipoPeriferico)o0, o10, o1, o2, o3, o4, o5, o6, o7, o8, o9));
                                     break;
                                 case 2:
-                                    lista.Add(new Pantalla((TipoPeriferico)o0, o1, o2, o3, o4, o5, o6, o7, o8, o9));
+                                    lista.Add(new Pantalla((TipoPeriferico)o0, o10, o1, o2, o3, o4, o5, o6, o7, o8, o9));
                                     break;
                                 case 3:
-                                    lista.Add(new Altavoz((TipoPeriferico)o0, o1, o2, o3, o4, o5, o6, o7, o8, o9));
+                                    lista.Add(new Altavoz((TipoPeriferico)o0, o10, o1, o2, o3, o4, o5, o6, o7, o8, o9));
                                     break;
                                  default:
                                     break;
@@ -110,6 +112,7 @@ namespace Catalogo.controller
                         int tipo = p.Tipo;
 
                         escritura.Write(p.Tipo);
+                        escritura.Write(p.Img);
                         escritura.Write(p.IdProducto);
                         escritura.Write(p.Marca.PadRight(longitudString));
                         escritura.Write(p.Precio);
