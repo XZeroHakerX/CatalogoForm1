@@ -137,7 +137,7 @@ namespace CatalogoForm
             if (aux[cont].Img != 0) { pbxImagen.Image = Image.FromFile($"img/{aux[cont].Img}.jpg"); }
             txtId.Text = aux[cont].IdProducto.ToString();
             txtMarca.Text = aux[cont].Marca.ToString();
-            txtPrecio.Text = aux[cont].Precio.ToString();
+            txtPrecio.Text = $"{aux[cont].Precio:C}";
             if (aux[cont].Tipo == 0)
             {
                 Raton r = (Raton)aux[cont];

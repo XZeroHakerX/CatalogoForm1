@@ -226,12 +226,12 @@
             // 
             txtPrecio.BackColor = Color.SkyBlue;
             txtPrecio.Cursor = Cursors.IBeam;
-            txtPrecio.Font = new Font("Segoe UI", 20F);
-            txtPrecio.Location = new Point(528, 298);
+            txtPrecio.Font = new Font("Segoe UI", 18F);
+            txtPrecio.Location = new Point(522, 295);
             txtPrecio.Margin = new Padding(4);
             txtPrecio.Name = "txtPrecio";
             txtPrecio.ReadOnly = true;
-            txtPrecio.Size = new Size(198, 61);
+            txtPrecio.Size = new Size(205, 55);
             txtPrecio.TabIndex = 19;
             // 
             // txtAtributo10

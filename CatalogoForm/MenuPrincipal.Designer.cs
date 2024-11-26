@@ -43,6 +43,7 @@
             btnAgregarPantalla = new Button();
             btnAgregarTeclado = new Button();
             btnAgregarRaton = new Button();
+            label1 = new Label();
             pnBotonesVer.SuspendLayout();
             pnlBotonesAgregar.SuspendLayout();
             SuspendLayout();
@@ -83,7 +84,7 @@
             bntAgregar.FlatAppearance.BorderSize = 4;
             bntAgregar.FlatStyle = FlatStyle.Popup;
             bntAgregar.Font = new Font("Yu Gothic UI", 18F, FontStyle.Bold);
-            bntAgregar.Location = new Point(865, 180);
+            bntAgregar.Location = new Point(872, 180);
             bntAgregar.Margin = new Padding(4);
             bntAgregar.Name = "bntAgregar";
             bntAgregar.Size = new Size(209, 116);
@@ -99,7 +100,7 @@
             bntBorrar.Cursor = Cursors.No;
             bntBorrar.FlatStyle = FlatStyle.Popup;
             bntBorrar.Font = new Font("Yu Gothic UI", 19.8000011F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            bntBorrar.Location = new Point(865, 396);
+            bntBorrar.Location = new Point(872, 396);
             bntBorrar.Margin = new Padding(4);
             bntBorrar.Name = "bntBorrar";
             bntBorrar.Size = new Size(209, 79);
@@ -113,7 +114,7 @@
             btnSalir.Anchor = AnchorStyles.Bottom | AnchorStyles.Right;
             btnSalir.Cursor = Cursors.Hand;
             btnSalir.Font = new Font("Yu Gothic UI Semibold", 16F);
-            btnSalir.Location = new Point(865, 482);
+            btnSalir.Location = new Point(872, 482);
             btnSalir.Margin = new Padding(4);
             btnSalir.Name = "btnSalir";
             btnSalir.Size = new Size(209, 51);
@@ -268,6 +269,16 @@
             btnAgregarRaton.UseVisualStyleBackColor = false;
             btnAgregarRaton.Click += btnAgregarRaton_Click;
             // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.BackColor = SystemColors.ActiveBorder;
+            label1.Location = new Point(12, 528);
+            label1.Name = "label1";
+            label1.Size = new Size(68, 25);
+            label1.TabIndex = 7;
+            label1.Text = "V 1.4.A";
+            // 
             // MenuPrincipal
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -277,7 +288,8 @@
             BackColor = SystemColors.ActiveCaption;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1081, 562);
+            ClientSize = new Size(1121, 562);
+            Controls.Add(label1);
             Controls.Add(pnlBotonesAgregar);
             Controls.Add(pnBotonesVer);
             Controls.Add(btnSalir);
@@ -315,5 +327,6 @@
         private Button btnAgregarPantalla;
         private Button btnAgregarTeclado;
         private Button btnAgregarRaton;
+        private Label label1;
     }
 }

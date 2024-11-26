@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CatalogoForm")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f99e7aa7c852deda5730be9b3f36e1194c02f0a2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fcc0ca0888506400bc8d7377eea11ebfde975970")]
 [assembly: System.Reflection.AssemblyProductAttribute("CatalogoForm")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CatalogoForm")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
