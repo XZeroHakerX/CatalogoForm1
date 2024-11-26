@@ -15,7 +15,7 @@
     {
         "Entry"
         {
-        "MsmKey" = "8:_CD435B1ABAC54105B2760001415674B0"
+        "MsmKey" = "8:_2FD3528256114108A6E3C98F462CF5A6"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -50,6 +50,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
         "Release"
@@ -74,6 +82,14 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.7.2"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4.7.2 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.7.2"
+                    }
+                }
             }
         }
     }
@@ -106,9 +122,9 @@
         }
         "File"
         {
-            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_CD435B1ABAC54105B2760001415674B0"
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_2FD3528256114108A6E3C98F462CF5A6"
             {
-            "SourcePath" = "8:..\\..\\..\\..\\icono.ico"
+            "SourcePath" = "8:..\\..\\..\\icono.ico"
             "TargetName" = "8:icono.ico"
             "Tag" = "8:"
             "Folder" = "8:_3F008EA195414BFA8DF527109DA8D971"
@@ -314,7 +330,7 @@
             "Target" = "8:_D7B856EEA8D94EAB949F731081AA9ED3"
             "Folder" = "8:_C2E1F510EC3248559A256CCF50DA1600"
             "WorkingFolder" = "8:_3F008EA195414BFA8DF527109DA8D971"
-            "Icon" = "8:_CD435B1ABAC54105B2760001415674B0"
+            "Icon" = "8:_2FD3528256114108A6E3C98F462CF5A6"
             "Feature" = "8:"
             }
             "{970C0BB2-C7D0-45D7-ABFA-7EC378858BC0}:_DDC9B9F534254358BAF0EC5A32671E2D"
@@ -328,7 +344,7 @@
             "Target" = "8:_D7B856EEA8D94EAB949F731081AA9ED3"
             "Folder" = "8:_984FC12FE88745E39F267B758DD8E24C"
             "WorkingFolder" = "8:_3F008EA195414BFA8DF527109DA8D971"
-            "Icon" = "8:_CD435B1ABAC54105B2760001415674B0"
+            "Icon" = "8:_2FD3528256114108A6E3C98F462CF5A6"
             "Feature" = "8:"
             }
         }
@@ -732,7 +748,7 @@
         {
             "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_D7B856EEA8D94EAB949F731081AA9ED3"
             {
-            "SourcePath" = "8:..\\CatalogoForm\\obj\\Release\\net8.0-windows7.0\\apphost.exe"
+            "SourcePath" = "8:..\\CatalogoForm\\obj\\Release\\net8.0-windows10.0.26100.0\\apphost.exe"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_3F008EA195414BFA8DF527109DA8D971"

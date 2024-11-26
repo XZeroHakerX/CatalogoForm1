@@ -16,10 +16,9 @@ namespace Catalogo.controller
             string path = ruta;
             try
             {
-                if (File.Exists(path))
-                {
+                
                     
-                    FileStream fs1 = File.Open(path, FileMode.Open,FileAccess.Read);
+                    FileStream fs1 = File.Open(path, FileMode.OpenOrCreate, FileAccess.Read);
                     using (BinaryReader lectura = new BinaryReader(fs1))
                     {
                         while (lectura.BaseStream.Position < lectura.BaseStream.Length)
@@ -68,11 +67,7 @@ namespace Catalogo.controller
 
 
                     }
-                }
-                else
-                {
-                    throw new Exception("No se encuentra el archivo.");
-                }
+                
             }
             catch (EndOfStreamException e)
             {
