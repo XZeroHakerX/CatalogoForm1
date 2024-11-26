@@ -12,7 +12,6 @@ namespace Catalogo.controller
     {
         public static int contImg = 0;
 
-
 //Ruta archivo:
         internal string RUTA = "catalogo.dat";
 
@@ -24,20 +23,18 @@ namespace Catalogo.controller
 
         private static ControladorBD unico;
 
-//Constructor (Leemos datos del archivo):
+        //Constructor (Leemos datos del archivo):
         private ControladorBD()
         {
             lista_bd = UtilidadesBD.LeerBd(RUTA);
             //Controlo las imagenes que entran de la base de datos.
 
-
             if (!Directory.Exists(RUTAIMAGENES))
             {
                 Directory.CreateDirectory(RUTAIMAGENES);
             }
-            
 
-            foreach(Periferico periferico in lista_bd)
+            foreach (Periferico periferico in lista_bd)
             {
                 if (contImg < periferico.Img)
                 {
@@ -68,7 +65,7 @@ namespace Catalogo.controller
 //Devuelve la lista ordenada por defecto.
         internal List<Periferico> OrdenarPorDefecto()
         {
-            List<Periferico> ordenada = lista_bd;
+            List<Periferico> ordenada = lista_bd.ToList<Periferico>();
             ordenada.Sort();
             return ordenada;
         }

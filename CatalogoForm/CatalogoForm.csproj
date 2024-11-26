@@ -19,6 +19,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="view\**" />
+    <EmbeddedResource Remove="view\**" />
+    <None Remove="view\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <None Remove="catalogo.dat" />
   </ItemGroup>
 
@@ -26,10 +32,6 @@
     <Content Include="catalogo.dat">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="view\" />
   </ItemGroup>
 
   <ItemGroup>

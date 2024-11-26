@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Net.Mime.MediaTypeNames;
 
 namespace CatalogoForm
 {
@@ -64,8 +65,10 @@ namespace CatalogoForm
 
                 if (dg == DialogResult.Yes)
                 {
+
                     for (int i = indicesSeleccionados.Count - 1; i >= 0; i--)
                     {
+                        //File.Delete($"img/{indicesSeleccionados[i]}.jpg");
                         cbd.BorrarElemento(indicesSeleccionados[i]);
                     }
 

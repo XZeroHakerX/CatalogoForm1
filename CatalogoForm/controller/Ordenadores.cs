@@ -18,21 +18,21 @@ namespace Catalogo.controller
     {
         public int Compare(Periferico? x, Periferico? y)
         {
-            return y.IdProducto.CompareTo(x.IdProducto);
+            return x.IdProducto.CompareTo(y.IdProducto);
         }
     }
     public class OrdenarPorMarca() : IComparer<Periferico>
     {
         public int Compare(Periferico? x, Periferico? y)
         {
-            return y.Marca.CompareTo(x.Marca);
+            return x.Marca.CompareTo(y.Marca);
         }
     }
     public class OrdenarPorPrecio() : IComparer<Periferico>
     {
         public int Compare(Periferico? x, Periferico? y)
         {
-            return y.Precio.CompareTo(x.Precio);
+            return x.Precio.CompareTo(y.Precio);
         }
     }
 }

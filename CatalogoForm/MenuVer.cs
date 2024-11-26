@@ -114,6 +114,7 @@ namespace CatalogoForm
         //Limpia los campos a "":
         private void LimpiaCampos()
         {
+            pbxImagen.Image = null;
             txtTipo.Text = "";
             txtId.Text = "";
             txtMarca.Text = "";
@@ -133,7 +134,7 @@ namespace CatalogoForm
         {
             txtTipo.Text = ((TipoPeriferico)aux[cont].Tipo).ToString();
             pbxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
-            pbxImagen.Image = Image.FromFile($"img/{aux[0].Img}.jpg");
+            if (aux[cont].Img != 0) { pbxImagen.Image = Image.FromFile($"img/{aux[cont].Img}.jpg"); }
             txtId.Text = aux[cont].IdProducto.ToString();
             txtMarca.Text = aux[cont].Marca.ToString();
             txtPrecio.Text = aux[cont].Precio.ToString();
@@ -323,7 +324,7 @@ namespace CatalogoForm
             
             if (aux[cont].Tipo == 0)
             {
-                Raton r_aux = new Raton((TipoPeriferico)0, Int32.Parse(pbxImagen.AccessibleName.ToString()), Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Raton r_aux = new Raton((TipoPeriferico)0, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(r_aux, indice);
@@ -331,7 +332,7 @@ namespace CatalogoForm
             }
             else if (aux[cont].Tipo == 1)
             {
-                Teclado t_aux = new Teclado((TipoPeriferico)1, Int32.Parse(pbxImagen.AccessibleName.ToString()), Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Teclado t_aux = new Teclado((TipoPeriferico)1, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
 
@@ -339,14 +340,14 @@ namespace CatalogoForm
             }
             else if (aux[cont].Tipo == 2)
             {
-                Pantalla p_aux = new Pantalla((TipoPeriferico)2, Int32.Parse(pbxImagen.AccessibleName.ToString()), Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Pantalla p_aux = new Pantalla((TipoPeriferico)2, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(p_aux, indice);
             }
             else
             {
-                Altavoz a_aux = new Altavoz((TipoPeriferico)3, Int32.Parse(pbxImagen.AccessibleName.ToString()), Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Altavoz a_aux = new Altavoz((TipoPeriferico)3, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(a_aux, indice);
@@ -356,7 +357,7 @@ namespace CatalogoForm
             EditableOff();
             MostrarMenu();
 
-
+            
         }
 
 
@@ -470,6 +471,7 @@ namespace CatalogoForm
                 DialogResult result = MessageBox.Show("¿Seguro que quieres borrar este articulo?", "Cuidado", MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
+                    //File.Delete($"img/{aux[cont].Img}.jpg");
                     cbd.BorrarElemento(aux[cont]);
 
                     if (cont > (aux.Count - 1))
