@@ -183,9 +183,9 @@
             pnlBotonesAgregar.Controls.Add(btnAgregarPantalla);
             pnlBotonesAgregar.Controls.Add(btnAgregarTeclado);
             pnlBotonesAgregar.Controls.Add(btnAgregarRaton);
-            pnlBotonesAgregar.Location = new Point(228, 161);
+            pnlBotonesAgregar.Location = new Point(211, 161);
             pnlBotonesAgregar.Name = "pnlBotonesAgregar";
-            pnlBotonesAgregar.Size = new Size(496, 242);
+            pnlBotonesAgregar.Size = new Size(513, 242);
             pnlBotonesAgregar.TabIndex = 6;
             pnlBotonesAgregar.Visible = false;
             // 
@@ -196,7 +196,7 @@
             btnAgregarAltavoz.FlatStyle = FlatStyle.Popup;
             btnAgregarAltavoz.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnAgregarAltavoz.Image = (Image)resources.GetObject("btnAgregarAltavoz.Image");
-            btnAgregarAltavoz.Location = new Point(237, 123);
+            btnAgregarAltavoz.Location = new Point(254, 127);
             btnAgregarAltavoz.Margin = new Padding(10);
             btnAgregarAltavoz.Name = "btnAgregarAltavoz";
             btnAgregarAltavoz.Size = new Size(259, 106);
@@ -214,7 +214,7 @@
             btnAgregarPantalla.FlatStyle = FlatStyle.Popup;
             btnAgregarPantalla.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnAgregarPantalla.Image = (Image)resources.GetObject("btnAgregarPantalla.Image");
-            btnAgregarPantalla.Location = new Point(-10, 123);
+            btnAgregarPantalla.Location = new Point(7, 127);
             btnAgregarPantalla.Margin = new Padding(10);
             btnAgregarPantalla.Name = "btnAgregarPantalla";
             btnAgregarPantalla.Size = new Size(243, 106);
@@ -232,7 +232,7 @@
             btnAgregarTeclado.FlatStyle = FlatStyle.Popup;
             btnAgregarTeclado.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnAgregarTeclado.Image = (Image)resources.GetObject("btnAgregarTeclado.Image");
-            btnAgregarTeclado.Location = new Point(237, 6);
+            btnAgregarTeclado.Location = new Point(254, 10);
             btnAgregarTeclado.Margin = new Padding(10);
             btnAgregarTeclado.Name = "btnAgregarTeclado";
             btnAgregarTeclado.Size = new Size(259, 104);
@@ -250,7 +250,7 @@
             btnAgregarRaton.FlatStyle = FlatStyle.Popup;
             btnAgregarRaton.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnAgregarRaton.Image = (Image)resources.GetObject("btnAgregarRaton.Image");
-            btnAgregarRaton.Location = new Point(-10, 6);
+            btnAgregarRaton.Location = new Point(7, 10);
             btnAgregarRaton.Margin = new Padding(10);
             btnAgregarRaton.Name = "btnAgregarRaton";
             btnAgregarRaton.RightToLeft = RightToLeft.No;
