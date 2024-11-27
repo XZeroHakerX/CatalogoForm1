@@ -56,7 +56,7 @@
             btnOrdenarPrecio.FlatStyle = FlatStyle.Popup;
             btnOrdenarPrecio.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarPrecio.Location = new Point(328, 72);
-            btnOrdenarPrecio.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarPrecio.Margin = new Padding(10);
             btnOrdenarPrecio.Name = "btnOrdenarPrecio";
             btnOrdenarPrecio.Size = new Size(282, 49);
             btnOrdenarPrecio.TabIndex = 3;
@@ -71,7 +71,7 @@
             btnOrdenarMarca.FlatStyle = FlatStyle.Popup;
             btnOrdenarMarca.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarMarca.Location = new Point(328, 3);
-            btnOrdenarMarca.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarMarca.Margin = new Padding(10);
             btnOrdenarMarca.Name = "btnOrdenarMarca";
             btnOrdenarMarca.Size = new Size(282, 49);
             btnOrdenarMarca.TabIndex = 2;
@@ -86,7 +86,7 @@
             btnOrdenarIdproducto.FlatStyle = FlatStyle.Popup;
             btnOrdenarIdproducto.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarIdproducto.Location = new Point(27, 72);
-            btnOrdenarIdproducto.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarIdproducto.Margin = new Padding(10);
             btnOrdenarIdproducto.Name = "btnOrdenarIdproducto";
             btnOrdenarIdproducto.Size = new Size(282, 49);
             btnOrdenarIdproducto.TabIndex = 1;
@@ -101,7 +101,7 @@
             btnOrdenarTipo.FlatStyle = FlatStyle.Popup;
             btnOrdenarTipo.Font = new Font("Yu Gothic UI", 14F, FontStyle.Bold);
             btnOrdenarTipo.Location = new Point(27, 3);
-            btnOrdenarTipo.Margin = new Padding(10, 10, 10, 10);
+            btnOrdenarTipo.Margin = new Padding(10);
             btnOrdenarTipo.Name = "btnOrdenarTipo";
             btnOrdenarTipo.Size = new Size(282, 49);
             btnOrdenarTipo.TabIndex = 0;
@@ -120,6 +120,7 @@
             Controls.Add(pnlBotonesAgregar);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(2);
+            MaximizeBox = false;
             Name = "BotonesOrdenarColumna";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Ordenar Productos";

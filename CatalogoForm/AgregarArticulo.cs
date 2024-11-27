@@ -129,7 +129,7 @@ namespace CatalogoForm
             using (OpenFileDialog imagenDialog = new OpenFileDialog())
             {
                 imagenDialog.Title = "Seleccione una imagen";
-                imagenDialog.Filter = "Archivos de Imagen|*.jpep;*jpg";
+                imagenDialog.Filter = "Archivos de Imagen|*.jpeg;*jpg";
                 imagenDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
 
                 // Mostrar el diálogo y cargar la imagen si el usuario presiona OK

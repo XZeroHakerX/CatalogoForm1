@@ -61,12 +61,12 @@
             // lblTitulo
             // 
             lblTitulo.AutoSize = true;
-            lblTitulo.Font = new Font("Segoe UI", 16F);
+            lblTitulo.Font = new Font("Segoe UI", 16F, FontStyle.Bold);
             lblTitulo.Location = new Point(33, 7);
             lblTitulo.Name = "lblTitulo";
-            lblTitulo.Size = new Size(211, 37);
+            lblTitulo.Size = new Size(240, 37);
             lblTitulo.TabIndex = 23;
-            lblTitulo.Text = "Agregar Articulo";
+            lblTitulo.Text = "Agregar Articulo:";
             // 
             // txtTipo
             // 
@@ -384,6 +384,7 @@
             Controls.Add(lblPrecio);
             FormBorderStyle = FormBorderStyle.Fixed3D;
             Margin = new Padding(2);
+            MaximizeBox = false;
             Name = "AgregarArticulo";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AgregarArticulo";

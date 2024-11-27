@@ -38,12 +38,13 @@
             // clstBorrar
             // 
             clstBorrar.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            clstBorrar.BackColor = SystemColors.Info;
             clstBorrar.CheckOnClick = true;
             clstBorrar.Font = new Font("Segoe UI", 14F);
             clstBorrar.FormattingEnabled = true;
             clstBorrar.HorizontalScrollbar = true;
             clstBorrar.Location = new Point(35, 22);
-            clstBorrar.Margin = new Padding(2, 2, 2, 2);
+            clstBorrar.Margin = new Padding(2);
             clstBorrar.Name = "clstBorrar";
             clstBorrar.ScrollAlwaysVisible = true;
             clstBorrar.Size = new Size(1004, 582);
@@ -115,13 +116,14 @@
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.LightCoral;
+            BackgroundImageLayout = ImageLayout.None;
             ClientSize = new Size(1081, 769);
             Controls.Add(btnMenos);
             Controls.Add(btnMas);
             Controls.Add(btnCancelar);
             Controls.Add(bntBorrar);
             Controls.Add(clstBorrar);
-            Margin = new Padding(2, 2, 2, 2);
+            Margin = new Padding(2);
             Name = "MenuBorrar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Borrar Articulo/s";

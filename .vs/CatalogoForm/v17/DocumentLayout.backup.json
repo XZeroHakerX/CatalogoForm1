@@ -1,85 +1,38 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\",
+  "WorkspaceRootPath": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zeroh\\desktop\\proyectos\\catalogoform\\catalogoform\\catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\controller\\ordenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\controller\\ordenadores.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuver.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\menuborrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuborrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\catalogoform\\menuborrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\catalogoform\\menuborrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuborrar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\catalogoform\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\catalogoform\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zeroh\\desktop\\proyectos\\catalogoform\\catalogoform\\catalogoform\\botonesordenarcolumna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\botonesordenarcolumna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\controller\\utilidadesbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\controller\\utilidadesbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zeroh\\desktop\\proyectos\\catalogoform\\catalogoform\\catalogoform\\botonesfiltrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\botonesfiltrarproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\controller\\controladorbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\controller\\controladorbd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Zero\\AppData\\Local\\SourceServer\\92b6febbbb2a22e7687fb51fb330ce914f5e7cc33758780ae085e2a4a16b8ece\\src\\libraries\\System.Private.CoreLib\\src\\System\\IO\\FileSystem.Windows.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\menuborrar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\menuborrar.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zeroh\\desktop\\proyectos\\catalogoform\\catalogoform\\catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\altavoz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\altavoz.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\pantalla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\pantalla.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\teclado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\teclado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\raton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\raton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\perifericosalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\perifericosalida.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\model\\perifericoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\model\\perifericoentrada.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zero\\desktop\\proyectos\\catalogoform1\\catalogoform\\agregararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\agregararticulo.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|c:\\users\\zeroh\\desktop\\proyectos\\catalogoform\\catalogoform\\catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A63B08DA-9440-4017-B193-B4EB324F6346}|CatalogoForm\\CatalogoForm.csproj|solutionrelative:catalogoform\\agregararticulo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -89,79 +42,28 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ControladorBD.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\ControladorBD.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\controller\\ControladorBD.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\ControladorBD.cs",
-              "RelativeToolTip": "CatalogoForm\\controller\\ControladorBD.cs",
-              "ViewState": "AgIAAC4AAAAAAAAAAAAQwD4AAAAJAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MenuVer.cs",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuVer.cs",
+              "RelativeDocumentMoniker": "CatalogoForm\\MenuVer.cs",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuVer.cs",
+              "RelativeToolTip": "CatalogoForm\\MenuVer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:39:11.318Z",
-              "IsPinned": true
+              "WhenOpened": "2024-11-27T16:38:36.717Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Ordenadores.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\Ordenadores.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\controller\\Ordenadores.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\Ordenadores.cs",
-              "RelativeToolTip": "CatalogoForm\\controller\\Ordenadores.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:17:50.955Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MenuVer.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuVer.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\MenuVer.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuVer.cs*",
-              "RelativeToolTip": "CatalogoForm\\MenuVer.cs*",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwIsAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T17:40:06.445Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AgregarArticulo.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\AgregarArticulo.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\AgregarArticulo.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\AgregarArticulo.cs",
-              "RelativeToolTip": "CatalogoForm\\AgregarArticulo.cs",
-              "ViewState": "AgIAAIAAAAAAAAAAAAAswI0AAAAeAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:29:25.15Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "MenuPrincipal.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\MenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuPrincipal.cs [Dise\u00F1o]",
-              "RelativeToolTip": "CatalogoForm\\MenuPrincipal.cs [Dise\u00F1o]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T20:14:49.515Z",
-              "EditorCaption": " [Dise\u00F1o]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
               "Title": "MenuBorrar.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.cs",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuBorrar.cs",
               "RelativeDocumentMoniker": "CatalogoForm\\MenuBorrar.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuBorrar.cs [Dise\u00F1o]",
               "RelativeToolTip": "CatalogoForm\\MenuBorrar.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T19:07:03.736Z",
@@ -169,175 +71,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MenuBorrar.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\MenuBorrar.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.cs",
-              "RelativeToolTip": "CatalogoForm\\MenuBorrar.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACoAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:07:20.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MenuVer.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuVer.cs",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuVer.cs",
               "RelativeDocumentMoniker": "CatalogoForm\\MenuVer.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuVer.cs [Dise\u00F1o]*",
-              "RelativeToolTip": "CatalogoForm\\MenuVer.cs [Dise\u00F1o]*",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuVer.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoForm\\MenuVer.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-26T19:49:38.813Z",
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "FileSystem.Windows.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\AppData\\Local\\SourceServer\\92b6febbbb2a22e7687fb51fb330ce914f5e7cc33758780ae085e2a4a16b8ece\\src\\libraries\\System.Private.CoreLib\\src\\System\\IO\\FileSystem.Windows.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\SourceServer\\92b6febbbb2a22e7687fb51fb330ce914f5e7cc33758780ae085e2a4a16b8ece\\src\\libraries\\System.Private.CoreLib\\src\\System\\IO\\FileSystem.Windows.cs",
-              "ToolTip": "C:\\Users\\Zero\\AppData\\Local\\SourceServer\\92b6febbbb2a22e7687fb51fb330ce914f5e7cc33758780ae085e2a4a16b8ece\\src\\libraries\\System.Private.CoreLib\\src\\System\\IO\\FileSystem.Windows.cs [Solo lectura]",
-              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\SourceServer\\92b6febbbb2a22e7687fb51fb330ce914f5e7cc33758780ae085e2a4a16b8ece\\src\\libraries\\System.Private.CoreLib\\src\\System\\IO\\FileSystem.Windows.cs [Solo lectura]",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAtwGoAAAAUAAAAAQAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MenuPrincipal.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuPrincipal.cs",
+              "RelativeDocumentMoniker": "CatalogoForm\\MenuPrincipal.cs",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\MenuPrincipal.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoForm\\MenuPrincipal.cs [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:12:44.131Z",
-              "EditorCaption": " [Solo lectura]"
+              "WhenOpened": "2024-11-26T20:14:49.515Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BotonesOrdenarColumna.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\BotonesOrdenarColumna.cs",
+              "RelativeDocumentMoniker": "CatalogoForm\\BotonesOrdenarColumna.cs",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\BotonesOrdenarColumna.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoForm\\BotonesOrdenarColumna.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:04:32.746Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "BotonesFiltrarProducto.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\BotonesFiltrarProducto.cs",
+              "RelativeDocumentMoniker": "CatalogoForm\\BotonesFiltrarProducto.cs",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\BotonesFiltrarProducto.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoForm\\BotonesFiltrarProducto.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T16:04:25.947Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AgregarArticulo.cs [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs",
+              "RelativeDocumentMoniker": "CatalogoForm\\AgregarArticulo.cs",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs [Dise\u00F1o]",
+              "RelativeToolTip": "CatalogoForm\\AgregarArticulo.cs [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-27T15:56:42.736Z",
+              "EditorCaption": " [Dise\u00F1o]"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
-              "Title": "UtilidadesBD.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\UtilidadesBD.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\controller\\UtilidadesBD.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\controller\\UtilidadesBD.cs",
-              "RelativeToolTip": "CatalogoForm\\controller\\UtilidadesBD.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAtwEUAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T15:28:33.244Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "MenuBorrar.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.Designer.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\MenuBorrar.Designer.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuBorrar.Designer.cs",
-              "RelativeToolTip": "CatalogoForm\\MenuBorrar.Designer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T19:07:09.364Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "MenuPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuPrincipal.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\MenuPrincipal.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\MenuPrincipal.cs",
-              "RelativeToolTip": "CatalogoForm\\MenuPrincipal.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T20:17:33.851Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Altavoz.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Altavoz.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\Altavoz.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Altavoz.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\Altavoz.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:09:55.519Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Pantalla.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Pantalla.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\Pantalla.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Pantalla.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\Pantalla.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:09:38.624Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Teclado.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Teclado.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\Teclado.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Teclado.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\Teclado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:09:08.831Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Raton.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Raton.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\Raton.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\Raton.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\Raton.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:07:51.968Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "PerifericoSalida.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\PerifericoSalida.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\PerifericoSalida.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\PerifericoSalida.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\PerifericoSalida.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwA4AAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:03:04.239Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "PerifericoEntrada.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\PerifericoEntrada.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\model\\PerifericoEntrada.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\model\\PerifericoEntrada.cs",
-              "RelativeToolTip": "CatalogoForm\\model\\PerifericoEntrada.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAUwBMAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T16:02:23.515Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AgregarArticulo.Designer.cs",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\AgregarArticulo.Designer.cs",
-              "RelativeDocumentMoniker": "CatalogoForm\\AgregarArticulo.Designer.cs",
-              "ToolTip": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\AgregarArticulo.Designer.cs",
-              "RelativeToolTip": "CatalogoForm\\AgregarArticulo.Designer.cs",
-              "ViewState": "AgIAAGABAAAAAAAAAAD4v2wBAAA7AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:29:38.978Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AgregarArticulo.cs [Dise\u00F1o]",
-              "DocumentMoniker": "C:\\Users\\Zero\\Desktop\\Proyectos\\CatalogoForm1\\CatalogoForm\\AgregarArticulo.cs",
+              "Title": "AgregarArticulo.cs",
+              "DocumentMoniker": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs",
               "RelativeDocumentMoniker": "CatalogoForm\\AgregarArticulo.cs",
-              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs [Dise\u00F1o]",
-              "RelativeToolTip": "..\\..\\..\\..\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs [Dise\u00F1o]",
+              "ToolTip": "C:\\Users\\zeroh\\Desktop\\Proyectos\\CatalogoForm\\CatalogoForm\\CatalogoForm\\AgregarArticulo.cs",
+              "RelativeToolTip": "CatalogoForm\\AgregarArticulo.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAswIMAAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-26T14:30:39.022Z"
+              "WhenOpened": "2024-11-27T15:56:44.896Z",
+              "EditorCaption": ""
             }
           ]
         }
