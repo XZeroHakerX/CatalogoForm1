@@ -20,6 +20,8 @@ namespace CatalogoForm
         List<Periferico> aux;
         ControladorBD cbd;
         int cont = 0;
+        //Atributo para el path de la nueva imagen:
+        string rutaNuevaImagenSeleccionada = "";
 
 
 
@@ -285,6 +287,7 @@ namespace CatalogoForm
                 btnBorrar.Enabled = false;
                 btnGuardar.Visible = true;
                 btnCancelar.Visible = true;
+                btnCargaNuevaImagen.Visible = true;
                 btnAnterior.Enabled = false;
                 btnPrimero.Enabled = false;
                 btnSiguiente.Enabled = false;
@@ -298,6 +301,8 @@ namespace CatalogoForm
                 txtAtributo8.ReadOnly = false;
                 txtAtributo9.ReadOnly = false;
                 txtAtributo10.ReadOnly = false;
+                rutaNuevaImagenSeleccionada = "";
+
 
                 txtId.BackColor = SystemColors.Window;
                 txtMarca.BackColor = SystemColors.Window;
@@ -321,10 +326,17 @@ namespace CatalogoForm
         {
 
             int indice = cbd.DevolverIndice(aux[cont]);
-            
+            int nuevaImg = aux[cont].Img;
+            if (rutaNuevaImagenSeleccionada.Count() > 0)
+            {
+                nuevaImg = ++ControladorBD.contImg;
+                cbd.GuardarImagen(rutaNuevaImagenSeleccionada, nuevaImg);
+                rutaNuevaImagenSeleccionada = "";
+            }
+
             if (aux[cont].Tipo == 0)
             {
-                Raton r_aux = new Raton((TipoPeriferico)0, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Raton r_aux = new Raton((TipoPeriferico)0, nuevaImg, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text.Replace("€", "").Trim()), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(r_aux, indice);
@@ -332,7 +344,7 @@ namespace CatalogoForm
             }
             else if (aux[cont].Tipo == 1)
             {
-                Teclado t_aux = new Teclado((TipoPeriferico)1, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Teclado t_aux = new Teclado((TipoPeriferico)1, nuevaImg, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text.Replace("€", "").Trim()), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
 
@@ -340,14 +352,14 @@ namespace CatalogoForm
             }
             else if (aux[cont].Tipo == 2)
             {
-                Pantalla p_aux = new Pantalla((TipoPeriferico)2, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Pantalla p_aux = new Pantalla((TipoPeriferico)2, nuevaImg, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text.Replace("€", "").Trim()), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(p_aux, indice);
             }
             else
             {
-                Altavoz a_aux = new Altavoz((TipoPeriferico)3, aux[cont].Img, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
+                Altavoz a_aux = new Altavoz((TipoPeriferico)3, nuevaImg, Int32.Parse(txtId.Text), txtMarca.Text, Double.Parse(txtPrecio.Text.Replace("€", "").Trim()), Int32.Parse(txtAtributo5.Text), txtAtributo6.Text,
                         Double.Parse(txtAtributo7.Text), Int32.Parse(txtAtributo8.Text), Boolean.Parse(txtAtributo9.Text), Boolean.Parse(txtAtributo10.Text));
 
                 cbd.InsertarPeriferico(a_aux, indice);
@@ -357,7 +369,7 @@ namespace CatalogoForm
             EditableOff();
             MostrarMenu();
 
-            
+
         }
 
 
@@ -374,10 +386,12 @@ namespace CatalogoForm
         //Metodo para salir de la edicion:
         private void EditableOff()
         {
+
             btnModificar.Enabled = true;
             btnBorrar.Enabled = true;
             btnGuardar.Visible = false;
             btnCancelar.Visible = false;
+            btnCargaNuevaImagen.Visible = false;
             txtId.ReadOnly = true;
             txtMarca.ReadOnly = true;
             txtPrecio.ReadOnly = true;
@@ -387,6 +401,7 @@ namespace CatalogoForm
             txtAtributo8.ReadOnly = true;
             txtAtributo9.ReadOnly = true;
             txtAtributo10.ReadOnly = true;
+            rutaNuevaImagenSeleccionada = "";
 
             txtId.BackColor = Color.SkyBlue;
             txtMarca.BackColor = Color.SkyBlue;
@@ -488,6 +503,27 @@ namespace CatalogoForm
         private void btnAtras_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void btnCargaNuevaImagen_Click(object sender, EventArgs e)
+        {
+            using (OpenFileDialog imagenDialog = new OpenFileDialog())
+            {
+                imagenDialog.Title = "Seleccione una imagen";
+                imagenDialog.Filter = "Archivos de Imagen|*.jpeg;*jpg";
+                imagenDialog.InitialDirectory = Environment.GetFolderPath(Environment.SpecialFolder.MyPictures);
+
+                // Mostrar el diálogo y cargar la imagen si el usuario presiona OK
+                if (imagenDialog.ShowDialog() == DialogResult.OK)
+                {
+                    rutaNuevaImagenSeleccionada = imagenDialog.FileName;
+
+                    // Cargar la imagen en el PictureBox
+                    System.Drawing.Image img = System.Drawing.Image.FromFile(rutaNuevaImagenSeleccionada);
+                    pbxImagen.SizeMode = PictureBoxSizeMode.StretchImage;
+                    pbxImagen.Image = img;
+                }
+            }
         }
     }
 }
